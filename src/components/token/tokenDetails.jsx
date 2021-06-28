@@ -60,37 +60,6 @@ class TokenDetails extends Component {
             <OwlCarousel ref="carousel" options={options}>
               <div className="cart-list">
                 <Col sm={6} className="chart">
-                  <EChartOne />
-                  <div className="imgs">
-                    <img src={iconsCoin} alt="" />
-                  </div>
-                </Col>
-                <Col sm={6}>
-                  <div className="label-chatrs">
-                    <div className="lsits">
-                      <span className="clabels-text">35%</span>
-                      <p>
-                        For initial supply and reward of AMP related farming and
-                        stake
-                      </p>
-                    </div>
-                    <div className="lsits">
-                      <span className="clabels-text">30%</span>
-                      <p>For trading reward pool = minted</p>
-                    </div>
-                    <div className="lsits">
-                      <span className="clabels-text">20%</span>
-                      <p>For charity</p>
-                    </div>
-                    <div className="lsits">
-                      <span className="clabels-text">15%</span>
-                      <p>For dev fund</p>
-                    </div>                   
-                  </div>
-                </Col>
-              </div>
-              <div className="cart-list">
-                <Col sm={6} className="chart">
                   <EChartTwo />
                   <div className="imgs">
                     <img src={iconsCoin} alt="" />
@@ -147,62 +116,34 @@ class TokenDetails extends Component {
             <ReactWOW animation="fadeIn" duration="1s">
               <div className="tokes-chart-slider">
                 <OwlCarousel ref="carousel" options={options}>
-                  <div className="cart-list">
-                    <Col sm={6} className="chart">
-                      <EChartOne />
-                      <div className="imgs">
-                        <img src={iconsCoin} alt="" />
-                      </div>
-                    </Col>
-                    <Col sm={6}>
-                      <div className="label-chatrs">
-                        <div className="lsits">
-                          <span className="clabels-text">85%</span>
-                          <p>For participants of Pre-Sale and ICO</p>
-                        </div>
-                        <div className="lsits">
-                          <span className="clabels-text">8%</span>
-                          <p>Reserved for the team.</p>
-                        </div>
-                        <div className="lsits">
-                          <span className="clabels-text">4%</span>
-                          <p>Reserved for the consultants.</p>
-                        </div>
-                        <div className="lsits">
-                          <span className="clabels-text">3%</span>
-                          <p>Bounty campaign</p>
-                        </div>
-                      </div>
-                    </Col>
+                <div className="cart-list">
+                <Col sm={6} className="chart">
+                  <EChartTwo />
+                  <div className="imgs">
+                    <img src={iconsCoin} alt="" />
                   </div>
-                  <div className="cart-list">
-                    <Col sm={6} className="chart">
-                      <EChartTwo />
-                      <div className="imgs">
-                        <img src={iconsCoin} alt="" />
-                      </div>
-                    </Col>
-                    <Col sm={6}>
-                      <div className="label-chatrs">
-                        <div className="lsits">
-                          <span className="clabels-text">85%</span>
-                          <p>For participants of Pre-Sale and ICO</p>
-                        </div>
-                        <div className="lsits">
-                          <span className="clabels-text">8%</span>
-                          <p>Reserved for the team.</p>
-                        </div>
-                        <div className="lsits">
-                          <span className="clabels-text">4%</span>
-                          <p>Reserved for the consultants.</p>
-                        </div>
-                        <div className="lsits">
-                          <span className="clabels-text">3%</span>
-                          <p>Bounty campaign</p>
-                        </div>
-                      </div>
-                    </Col>
+                </Col>
+                <Col sm={6}>
+                  <div className="label-chatrs">
+                    <div className="lsits">
+                      <span className="clabels-text">40%</span>
+                      <p>For the reward pool for Rock Farming pools</p>
+                    </div>
+                    <div className="lsits">
+                      <span className="clabels-text">40%</span>
+                      <p>For the reward pool for Staking pools </p>
+                    </div>
+                    <div className="lsits">
+                      <span className="clabels-text">15%</span>
+                      <p>For the dev team to ensure essential growth of the project</p>
+                    </div>
+                    <div className="lsits">
+                      <span className="clabels-text">5%</span>
+                      <p>For the founder</p>
+                    </div>
                   </div>
+                </Col>
+              </div>
                 </OwlCarousel>
               </div>
             </ReactWOW>
