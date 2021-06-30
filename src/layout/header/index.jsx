@@ -15,7 +15,6 @@ const Header = () => {
   const [top, setTop] = useState(0);
   const [height, setHeight] = useState(0);
   const { account } = useWeb3React();
-  console.log(account);
   const { login, logout } = useAuth();
   const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(
     login,
@@ -123,7 +122,8 @@ const Header = () => {
             <Col className="col-xs-6" sm={12} md={3} lg={3}>
               <div className="logo-area">
                 <Link to={Config.defaultPath}>
-                  <img src={logo} alt="logo" />
+                   <img src={logo} alt="logo" />
+                
                 </Link>
               </div>
             </Col>

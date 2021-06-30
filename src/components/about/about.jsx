@@ -11,7 +11,7 @@ class About extends Component {
         <Col lg={6} md={6} sm={12} className="col-xs-12">
           <div className="about-content">
             <h2 className="f-40 fw-400">
-              About The Project
+              About The Rock Token
             </h2>
             <p>Rock token is.....</p>
             <p>Rock token is.....</p>
@@ -35,7 +35,7 @@ class About extends Component {
             <div className="about-content">
               <ReactWOW animation={this.props.animate} duration="1s">
                 <h2 className="f-40 fw-400">
-                  About The Project
+                About The Rock Token
                     </h2>
               </ReactWOW>
               <ReactWOW animation={this.props.animate} duration="1.3s">

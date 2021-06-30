@@ -29,16 +29,16 @@ class Tokens extends Component {
             <h2>Rounds of Sale of Tokens</h2>
           </div>
         </Col>
-        <Col lg={12} md={12} sm={12} className="col-xs-12">
+        <Col lg={12} md={12} sm={12} className="col-xs-12 ">
           <Col
-            lg={6}
-            md={6}
+            lg={8}
+            md={8}
             sm={12}
-            className="col-xs-12 text-right col-lg-offset-3 col-md-offset-3"
+            className="col-xs-12 text-center col-lg-offset-2 col-md-offset-2"
           >
-            <div className="tokens mr-r50">
+            <div className="tokens">
               <div className="token-name">ICO</div>
-              <div className="token-body" style={{ height: 620 }}>
+              <div className="token-body">
                 <p>10,000,000 token presale</p>
                 <button className="right-btn">Price 1 Rock - $0.50</button>
                 <div className="prices">
@@ -55,42 +55,22 @@ class Tokens extends Component {
                       <tr>
                         <td>1st week</td>
                         <td>$0.5</td>
-                        <td>3M</td>
+                        <td>6M</td>
                       </tr>
                       <tr>
                         <td>2nd </td>
                         <td>$0.75</td>
-                        <td>1M</td>
+                        <td>2M</td>
                       </tr>
                       <tr>
                         <td>3rd</td>
                         <td>$1</td>
-                        <td>1M</td>
+                        <td>2M</td>
                       </tr>
                       <tr>
                         <td>4th</td>
                         <td>$1.25</td>
-                        <td>1M</td>
-                      </tr>
-                      <tr>
-                        <td>5th</td>
-                        <td>$1.5</td>
-                        <td>1M</td>
-                      </tr>
-                      <tr>
-                        <td>6th</td>
-                        <td>$2</td>
-                        <td>1M</td>
-                      </tr>
-                      <tr>
-                        <td>7th</td>
-                        <td>$2.5</td>
-                        <td>1M</td>
-                      </tr>
-                      <tr>
-                        <td>8th</td>
-                        <td>$3</td>
-                        <td>1M</td>
+                        <td>2M</td>
                       </tr>
                     </tbody>
                   </table>
@@ -98,103 +78,105 @@ class Tokens extends Component {
               </div>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-            <div className="tokens mr-r50">
-              <div className="token-name">ICO</div>
-              <div className="token-body" style={{ height: "620px" }}>
-                <p>Progress : </p>
-                <LinearProgressWithLabel value={12} />
-                <br />
-                <div className="prices" style={{ textAlign: "right" }}>
-                  BNB : <input type="number" />
-                  <br />
-                  Presale token : <input type="number" />
-                  <br />
-                  <br />
-                  <button
-                    className="right-btn"
-                    style={{
-                      height: "40px",
-                      padding: "0 54px",
-                      lineHeight: "20px",
-                    }}
-                  >
-                    Buy
-                  </button>
+          <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
+            <Col lg={6} md={6} sm={12} className="col-xs-12 text-center pd-t20">
+              <div className="progressbar-container">
+                <div className="progressbar-complete" style={{ width: `30%` }}>
+                  <div className="progressbar-liquid"></div>
                 </div>
-                <br />
-                <input
-                  type="number"
-                  value="1232"
-                  style={{ textAlign: "right" }}
-                />{" "}
-                {"  "} token Presold
+                <span className="progress-percent">30% Sold</span>
               </div>
-            </div>
+              <br />
+              <p className="f-20 fw-400 fc-white">
+                Presale Total Amount: 10 billion Rock
+              </p>
+            </Col>
+            <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+              <div className="mr-b10">
+                <span className="text-label">You send (BNB) : </span>
+                <input type="number" className="text-number" />
+              </div>
+              <div className="mr-b20">
+                <span className="text-label">You get (Rock) : </span>
+                <input type="number" className="text-number" />
+              </div>
+              <div className="buttons">
+                <button
+                  className="btn1"
+                  style={{
+                    height: "40px",
+                    padding: "0 54px",
+                    lineHeight: "20px",
+                  }}
+                >
+                  Buy Presale Token
+                </button>
+              </div>
+            </Col>
           </Col>
-          <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-            <div className="tokens mr-r50">
-              <div className="token-name">For Jazz Holders</div>
-              <div className="token-body" style={{ height: "620px" }}>
-                <p>Progress : </p>
-                <LinearProgressWithLabel value={12} />
-                <br />
-                <div className="prices" style={{ textAlign: "right" }}>
-                  BNB : <input type="number" />
-                  <br />
-                  Presale token : <input type="number" />
-                  <br />
-                  <br />
-                  <button
-                    className="right-btn"
-                    style={{
-                      height: "40px",
-                      padding: "0 54px",
-                      lineHeight: "20px",
-                    }}
-                  >
-                    Buy
-                  </button>
-                  <br />
-                  <br />
-                  <button
-                    className="right-btn"
-                    style={{
-                      height: "40px",
-                      padding: "0 54px",
-                      lineHeight: "20px",
-                    }}
-                  >
-                    Approve
-                  </button>
-                  <br />
-                  <br />
-                  Jazz token : <input type="number" />
-                  <br />
-                  Presale token : <input type="number" />
-                  <br />
-                  <br />
-                  <button
-                    className="right-btn"
-                    style={{
-                      height: "40px",
-                      padding: "0 54px",
-                      lineHeight: "20px",
-                    }}
-                  >
-                    Buy
-                  </button>
-                </div>
-                <br />
-                <br />
-                <input
-                  type="number"
-                  value="1232"
-                  style={{ textAlign: "right" }}
-                />{" "}
-                {"  "} token Presold
+          <Col
+            lg={12}
+            md={12}
+            sm={12}
+            className="col-xs-12 mr-t30 jazz-holders"
+          >
+            <h3>For Jazz Holders</h3>
+            <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+              <div className="mr-b10">
+                <span className="text-label">You send (BNB) : </span>
+                <input type="number" className="text-number" />
               </div>
-            </div>
+              <div className="mr-b20">
+                <span className="text-label">You get (Rock) : </span>
+                <input type="number" className="text-number" />
+              </div>
+              <div className="buttons">
+                <button
+                  className="btn1"
+                  style={{
+                    height: "40px",
+                    padding: "0 54px",
+                    lineHeight: "20px",
+                  }}
+                >
+                  Buy Presale Token
+                </button>
+              </div>
+              <div className="buttons mr-t10">
+                <button
+                  className="btn1"
+                  style={{
+                    height: "40px",
+                    padding: "0 54px",
+                    lineHeight: "20px",
+                  }}
+                >
+                  Approve
+                </button>
+              </div>
+            </Col>
+            <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+              <div className="mr-b10">
+                <span className="text-label">You send (Jazz) : </span>
+                <input type="number" className="text-number" />
+              </div>
+              <div className="mr-b20">
+                <span className="text-label">You get (Rock) : </span>
+                <input type="number" className="text-number" />
+              </div>
+              <div className="buttons">
+                <button
+                  className="btn1"
+                  style={{
+                    height: "40px",
+                    padding: "0 54px",
+                    lineHeight: "20px",
+                  }}
+                >
+                  Buy Presale Token
+                </button>
+              </div>
+            </Col>
           </Col>
           <Col lg={12} md={12} sm={12} className="col-xs-12 text-center">
             <p className="token-con">
@@ -229,14 +211,14 @@ class Tokens extends Component {
           >
             <ReactWOW animation={this.props.animate} duration="1.3s">
               <Col
-                lg={6}
-                md={6}
+                lg={8}
+                md={8}
                 sm={12}
-                className="col-xs-12 text-right col-lg-offset-3 col-md-offset-3"
+                className="col-xs-12 text-center col-lg-offset-2 col-md-offset-2"
               >
-                <div className="tokens mr-r50">
+                <div className="tokens">
                   <div className="token-name">ICO</div>
-                  <div className="token-body" style={{ height: 620 }}>
+                  <div className="token-body">
                     <p>10,000,000 token presale</p>
                     <button className="right-btn">Price 1 Rock - $0.50</button>
                     <div className="prices">
@@ -253,42 +235,22 @@ class Tokens extends Component {
                           <tr>
                             <td>1st week</td>
                             <td>$0.5</td>
-                            <td>3M</td>
+                            <td>6M</td>
                           </tr>
                           <tr>
                             <td>2nd </td>
                             <td>$0.75</td>
-                            <td>1M</td>
+                            <td>2M</td>
                           </tr>
                           <tr>
                             <td>3rd</td>
                             <td>$1</td>
-                            <td>1M</td>
+                            <td>2M</td>
                           </tr>
                           <tr>
                             <td>4th</td>
                             <td>$1.25</td>
-                            <td>1M</td>
-                          </tr>
-                          <tr>
-                            <td>5th</td>
-                            <td>$1.5</td>
-                            <td>1M</td>
-                          </tr>
-                          <tr>
-                            <td>6th</td>
-                            <td>$2</td>
-                            <td>1M</td>
-                          </tr>
-                          <tr>
-                            <td>7th</td>
-                            <td>$2.5</td>
-                            <td>1M</td>
-                          </tr>
-                          <tr>
-                            <td>8th</td>
-                            <td>$3</td>
-                            <td>1M</td>
+                            <td>2M</td>
                           </tr>
                         </tbody>
                       </table>
@@ -298,105 +260,115 @@ class Tokens extends Component {
               </Col>
             </ReactWOW>
             <ReactWOW animation={this.props.animate} duration="1.6s">
-              <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-                <div className="tokens mr-r50">
-                  <div className="token-name">ICO</div>
-                  <div className="token-body" style={{ height: "620px" }}>
-                    <p>Progress : </p>
-                    <LinearProgressWithLabel value={12} />
-                    <br />
-                    <div className="prices" style={{ textAlign: "right" }}>
-                      BNB : <input type="number" />
-                      <br />
-                      Presale token : <input type="number" />
-                      <br />
-                      <br />
-                      <button
-                        className="right-btn"
-                        style={{
-                          height: "40px",
-                          padding: "0 54px",
-                          lineHeight: "20px",
-                        }}
-                      >
-                        Buy
-                      </button>
+              <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
+                <Col
+                  lg={6}
+                  md={6}
+                  sm={12}
+                  className="col-xs-12 text-center pd-t20"
+                >
+                  <div className="progressbar-container">
+                    <div
+                      className="progressbar-complete"
+                      style={{ width: `30%` }}
+                    >
+                      <div className="progressbar-liquid"></div>
                     </div>
-                    <br />
-                    <input
-                      type="number"
-                      value="1232"
-                      style={{ textAlign: "right" }}
-                    />{" "}
-                    {"  "} token Presold
+                    <span className="progress-percent">30% Sold</span>
                   </div>
-                </div>
+                  <br />
+                  <p className="f-20 fw-400 fc-white">
+                    Presale Total Amount: 10 billion Rock
+                  </p>
+                </Col>
+                <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+                  <div className="mr-b10">
+                    <span className="text-label">You send (BNB) : </span>
+                    <input type="number" className="text-number" />
+                  </div>
+                  <div className="mr-b20">
+                    <span className="text-label">You get (Rock) : </span>
+                    <input type="number" className="text-number" />
+                  </div>
+                  <div className="buttons">
+                    <button
+                      className="btn1"
+                      style={{
+                        height: "40px",
+                        padding: "0 54px",
+                        lineHeight: "20px",
+                      }}
+                    >
+                      Buy Presale Token
+                    </button>
+                  </div>
+                </Col>
               </Col>
             </ReactWOW>
             <ReactWOW animation={this.props.animate} duration="1.9s">
-              <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-                <div className="tokens mr-r50">
-                  <div className="token-name">For Jazz Holders</div>
-                  <div className="token-body" style={{ height: "620px" }}>
-                    <p>Progress : </p>
-                    <LinearProgressWithLabel value={12} />
-                    <br />
-                    <div className="prices" style={{ textAlign: "right" }}>
-                      BNB : <input type="number" />
-                      <br />
-                      Presale token : <input type="number" />
-                      <br />
-                      <br />
-                      <button
-                        className="right-btn"
-                        style={{
-                          height: "40px",
-                          padding: "0 54px",
-                          lineHeight: "20px",
-                        }}
-                      >
-                        Buy
-                      </button>
-                      <br />
-                      <br />
-                      <button
-                        className="right-btn"
-                        style={{
-                          height: "40px",
-                          padding: "0 54px",
-                          lineHeight: "20px",
-                        }}
-                      >
-                        Approve
-                      </button>
-                      <br />
-                      <br />
-                      Jazz token : <input type="number" />
-                      <br />
-                      Presale token : <input type="number" />
-                      <br />
-                      <br />
-                      <button
-                        className="right-btn"
-                        style={{
-                          height: "40px",
-                          padding: "0 54px",
-                          lineHeight: "20px",
-                        }}
-                      >
-                        Buy
-                      </button>
-                    </div>
-                    <br />
-                    <br />
-                    <input
-                      type="number"
-                      value="1232"
-                      style={{ textAlign: "right" }}
-                    />{" "}
-                    {"  "} token Presold
+              <Col
+                lg={12}
+                md={12}
+                sm={12}
+                className="col-xs-12 mr-t30 jazz-holders"
+              >
+                <h3>For Jazz Holders</h3>
+                <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+                  <div className="mr-b10">
+                    <span className="text-label">You send (BNB) : </span>
+                    <input type="number" className="text-number" />
                   </div>
-                </div>
+                  <div className="mr-b20">
+                    <span className="text-label">You get (Rock) : </span>
+                    <input type="number" className="text-number" />
+                  </div>
+                  <div className="buttons">
+                    <button
+                      className="btn1"
+                      style={{
+                        height: "40px",
+                        padding: "0 54px",
+                        lineHeight: "20px",
+                      }}
+                    >
+                      Buy Presale Token
+                    </button>
+                  </div>
+                  <div className="buttons mr-t10">
+                    <button
+                      className="btn1"
+                      style={{
+                        height: "40px",
+                        padding: "0 54px",
+                        lineHeight: "20px",
+                      }}
+                    >
+                      Approve
+                    </button>
+                  </div>
+                </Col>
+                <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+                  <div className="mr-b10">
+                    <span className="text-label">You send (Jazz) : </span>
+                    <input type="number" className="text-number" />
+                  </div>
+                  <div className="mr-b20">
+                    <span className="text-label">You get (Rock) : </span>
+                    <input type="number" className="text-number" />
+                  </div>
+                  <div className="buttons">
+                    <button
+                      className="btn1"
+                      style={{
+                        height: "40px",
+                        padding: "0 54px",
+                        lineHeight: "20px",
+                      }}
+                    >
+                      Buy Presale Token
+                    </button>
+                  </div>
+                </Col>
               </Col>
             </ReactWOW>
 

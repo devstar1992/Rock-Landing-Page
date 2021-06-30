@@ -478,7 +478,7 @@ class Roadmap extends Component {
               </Row>
             </Container>
           </section>
-          <div className="sud">
+          <div className="sud roadmap">
             <svg
               version="1.1"
               id="Layer_1"

@@ -132,7 +132,7 @@ class Teams extends Component {
 
     return (
       <React.Fragment>
-        <div className="sud">
+        <div className="sud teams">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style={{enableBackground:"new 0 0 1920 181.1"}} space="preserve">
               <g>
                   <path style={{fillRule:'evenodd',clipRule:'evenodd',fill:  this.props.fill ? this.props.fill : '#10122d'}} className="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23

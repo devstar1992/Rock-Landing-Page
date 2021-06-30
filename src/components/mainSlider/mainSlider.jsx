@@ -12,15 +12,7 @@ class MainSlider extends Component {
       {
         title: "Rock Token - For Music and Casino",
         btn1: 'WHITEPAPER',
-      },
-      {
-        title: "Rock Token - For Music and Casino",
-        btn1: 'WHITEPAPER',
-      },
-      {
-        title: "Rock Token - For Music and Casino",
-        btn1: 'WHITEPAPER',
-      },
+      }
     ]
     const Items = data.map((obj, i) => (
       <div className="item" key={i}>
@@ -60,6 +52,7 @@ class MainSlider extends Component {
     ))
     return (
       <div className="slider-area">
+      
         <Particles
           style={{ width: window.innerWidth + 'px', height: window.innerHeight + 'px' }}
           params={{
@@ -80,10 +73,10 @@ class MainSlider extends Component {
               }
             }
           }} />
+
+      
         <div className="carousel">
-          <Slider autoplay duration={3000} >
             {Items}
-          </Slider>
         </div>
 
       </div>

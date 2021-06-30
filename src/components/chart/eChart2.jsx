@@ -38,24 +38,22 @@ class EChartTwo extends Component {
         type: 'pie',
         selectedMode: 'single',
         radius: ['90%', '30%'],
-        color: ['#a8a9bd', '#9395b9', '#656790', '#3e406e'],
-        labelLine: {
-          normal: {
-            show: false
-          }
-        },
+        color: ['#2E86C1','#138D75','#BA4A00','#D4AC0D'],
+        label:{
+          show: false,
+        },  
         data: [{
           value: 5,
-          name: ''
+          name: 'For the founder'
         }, {
           value: 15,
-          name: ''
+          name: 'For the dev team to ensure essential growth of the project'
         }, {
           value: 40,
-          name: ''
+          name: 'For the reward pool for Rock Farming pools'
         }, {
           value: 40,
-          name: ''
+          name: 'For reward pool for Staking pools'
         }]
       }
       ]

@@ -4,12 +4,17 @@
 html,
 body {
   font-size: 16px;
-  color: #8486a6;
+  color: #b8e2e4;
   font-family: "Lato", sans-serif;
   vertical-align: baseline;
   line-height: 26px;
   font-weight: 400;
   overflow-x:hidden;
+  background: url("../images/background/back.png");
+  background-position: center top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
 }
 /*-- Preloader css start --*/
 #preloader {
@@ -1539,8 +1544,9 @@ header {
   left: 0;
   right: 0;
   z-index: 95;
-  background:#2c2e53;
-      padding-top: 30px;
+  background:rgba(44, 43, 83, 0.4);
+
+      padding-top: 20px;
     padding-bottom: 14px;
 }
 header .menu-area {
@@ -1564,7 +1570,7 @@ header .menu-area nav ul li:first-child {
 }
 header .menu-area nav ul li a {
   display: inline-block;
-  color: rgba(255, 255, 255, 0.52);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -1832,7 +1838,7 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 	background:#45487d;
 }
 .btc_main_menu ul li:hover a, .btc_main_menu ul li.active a{
-	color: #3297cc;
+	color: #03dff9;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -1845,7 +1851,7 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 .slider-area {
   display: block;
   position: relative;
-  background: #1a1c35;
+  background: rgba(26,28,53,0.25);
 }
 .slider-area .carousel {
   position: relative;
@@ -1907,9 +1913,9 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
   width: 50px;
   height: 50px;
   line-height: 44px;
-  border: 3px solid #3d3f69;
+  border: 3px solid #3770cf;
   text-align: center;
-  color: #8486a6;
+  color: #50cff9;
   font-size: 20px;
   border-radius: 100%;
 }
@@ -2094,7 +2100,7 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
   margin-right: -150px;
 }
 .about-area{
-	background:#1a1c35;
+	background:#3c3e67;
 }
 @media only screen and (max-width: 1600px) {
   .about-area .about-img {
@@ -4070,7 +4076,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   }
 }
 .steps-details, .video-des{
-	background:#1a1c35;
+	background:rgba(11,11,11,0.3);
 }
 .steps-details .steps-cont ul li:nth-child(6):before {
   border-top: 2px solid #5e619c;
@@ -4106,6 +4112,14 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   overflow: hidden;
   vertical-align: middle;
   margin: 0 0 -9px;
+  background:#3c3e67;
+}
+.sud.roadmap {
+
+  background:rgba(11,11,11,0.3);
+}
+.sud.teams {
+
   background:#1a1c35;
 }
 @media only screen and (max-width: 992px) {
@@ -4128,7 +4142,7 @@ body.date-20180212.exp-invert-logo {
   position: relative;
   display: block;
   background: #2c2e53;
-  padding-bottom: 120px;
+  padding-bottom: 1px;
   text-align: center;
   margin: 0;
 }
@@ -4529,4 +4543,63 @@ canvas{
 .video-js{
   width: 770px;
   height: 400px;
+}
+
+.progressbar-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.progressbar-container .progress-percent {
+  z-index: 2;
+  color: #fff;
+  font-size: 22px;
+}
+.progressbar-container .progressbar-complete {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  background-color: #5225bd;
+  border-radius: 10px;
+  animation: g 2500ms infinite ease-in-out;
+  z-index: 2;
+}
+.progressbar-container .progressbar-liquid {
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  animation: g 2500ms infinite ease-in-out,
+    r 3000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background-color: #5225bd;
+  border-radius: 40%;
+}
+
+.text-label{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.text-number{
+  color:#1a1c35;
+  text-align: right;
+}
+.jazz-holders{
+  padding:20px;
+  background-color: rgba(11,11,11,0.3);
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
 }
