@@ -20,23 +20,6 @@ class MainSlider extends Component {
           <Row>
             <Col lg={6} md={6} sm={12} className="col-xs-12">
               <div className="slider-content">
-                <ul>
-                  <li className="slider_social_icon1">
-                    <Link to="#"><i className="fa fa-facebook"></i></Link>
-                  </li>
-                  <li className="slider_social_icon2">
-                    <Link to="#"><i className="fa fa-twitter"></i></Link>
-                  </li>
-                  <li className="slider_social_icon3">
-                    <Link to="#"><i className="fa fa-send-o"></i></Link>
-                  </li>
-                  <li className="slider_social_icon4">
-                    <Link to="#"><i className="fa fa-bitcoin"></i></Link>
-                  </li>
-                  <li className="slider_social_icon5">
-                    <Link to="#"><i className="fa fa-envelope"></i></Link>
-                  </li>
-                </ul>
                 <h2>{obj.title}</h2>
                 <div className="buttons">
                   <Link to="#" className="btn1" >{obj.btn1}</Link>

@@ -1616,6 +1616,7 @@ header .menu-area .side_menu {
   display: inline-block;
   margin-right: 15px;
 }
+
 header .menu-area .side_menu span {
   display: inline-block;
   width: 50px;
@@ -1831,6 +1832,10 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 	padding-left: 20px;
 	font-weight:bold;
 }
+#sidebar .login-btn{
+  text-align: center;
+  padding:5px 0 0 0;
+}
 #sidebar h1{
 	margin:0;
 	color:#ffffff;
@@ -1856,19 +1861,26 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 .slider-area .carousel {
   position: relative;
   z-index: 89;
-  padding: 30vh 0 40vh;
+  padding: 56vh 0 40vh;
 }
 .slider-area .slider-content {
   display: block;
   position: relative;
-  padding: 35px 0;
 }
 @media only screen and (max-width: 992px) {
   .slider-area .slider-content {
     text-align: center;
   }
 }
-.slider-area .slider-content ul {
+.logo-area{
+  display: flex;
+  flex-direction: column;
+}
+.logo-area ul {
+  display: block;
+  margin: 0 0 0 20px;
+}
+.slider-area .slider-content ul{
   display: block;
   margin: 0 0 50px;
 }
@@ -1888,25 +1900,42 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 	animation-delay: 1.5s
 }
 @media only screen and (max-width: 768px) {
-  .slider-area .slider-content ul {
+  .logo-area ul {
+    margin: 0 0 5px 15px;
+  }
+  .slider-area .slider-content ul{
     margin: 0 0 25px;
   }
 }
-.slider-area .slider-content ul li {
+.slider-area .slider-content ul li, .logo-area ul li {
   display: inline-block;
   position: relative;
   padding: 0 5px;
 }
 @media only screen and (max-width: 768px) {
-  .slider-area .slider-content ul li {
+  .slider-area .slider-content ul li, .logo-area ul li {
     padding: 0;
   }
 }
-.slider-area .slider-content ul li:first-child {
+.slider-area .slider-content ul li:first-child, .logo-area ul li:first-child {
   padding-left: 0;
 }
-.slider-area .slider-content ul li:last-child {
+.slider-area .slider-content ul li:last-child, .logo-area ul li:last-child {
   padding-right: 0;
+}
+.logo-area ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  border: 2px solid #3770cf;
+  text-align: center;
+  color: #50cff9;
+  font-size: 16px;
+  border-radius: 100%;
+}
+.logo-area ul li a img{
+  height:25px;
 }
 .slider-area .slider-content ul li a {
   display: block;
@@ -1919,7 +1948,18 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
   font-size: 20px;
   border-radius: 100%;
 }
-.slider-area .slider-content ul li a:hover {
+.logo-area ul li a:hover {
+  color: #fff;
+  background: rgba(57,100,208,1);
+background: -moz-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(57,100,208,1)), color-stop(100%, rgba(45,193,201,1)));
+background: -webkit-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+background: -o-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+background: -ms-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
+  border: 2px solid rgba(58, 159, 165);
+}
+.slider-area .slider-content ul li a:hover{
   color: #fff;
   background: rgba(57,100,208,1);
 background: -moz-linear-gradient(left, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 100%);
@@ -1997,7 +2037,6 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 .btc_timer_section_wrapper{
 	float:left;
 	width:100%;
-	padding-top: 80px;
 }
 #clockdiv, #clockdiv2{
 	color: #fff;
@@ -3506,7 +3545,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 .features-area .featured-lists ul li:before {
   content: '';
   position: absolute;
-  left: 12.5%;
+  left: 250px;
   right: 0;
   width: 50%;
   height: 2px;
@@ -3582,7 +3621,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   position: relative;
   display: block;
   margin: 0 0 0 70px;
-  text-align: left;
+  text-align: right;
 }
 @media only screen and (max-width: 768px) {
   .features-area .featured-lists ul li .imgs-l {
@@ -3627,7 +3666,12 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   position: relative;
   display: block;
   margin: 0 70px 0 0;
-  text-align: right;
+  text-align: left;
+  
+}
+.feature-image-container{
+  background-color: #2c2e53;
+  display: inline-block;
 }
 @media only screen and (max-width: 768px) {
   .features-area .featured-lists ul li .imgs-r {
@@ -4076,7 +4120,6 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   }
 }
 .steps-details, .video-des{
-	background:rgba(11,11,11,0.3);
 }
 .steps-details .steps-cont ul li:nth-child(6):before {
   border-top: 2px solid #5e619c;
@@ -4116,7 +4159,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 .sud.roadmap {
 
-  background:rgba(11,11,11,0.3);
+  background:transparent;
 }
 .sud.teams {
 
@@ -4602,4 +4645,20 @@ canvas{
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+#road_map{
+  background: url("../images/roadmap/Roadmap Background.png");
+  background-position: center top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.guitar-start{
+  background: url("../images/roadmap/Guitar Top.png");
+  background-position: center top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
 }

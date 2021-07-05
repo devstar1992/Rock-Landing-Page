@@ -11,11 +11,11 @@ class About extends Component {
         <Col lg={6} md={6} sm={12} className="col-xs-12">
           <div className="about-content">
             <h2 className="f-40 fw-400">
-              About The Rock Token
+            What is Rock Finance?
             </h2>
-            <p>Rock token is.....</p>
-            <p>Rock token is.....</p>
-            <p>Rock token is.....</p>
+            <p>What is Rock Finance?</p>
+            <p>Lately, many DeFi platforms have emerged, but most of them have failed to present a unique use case with real world applications to stimulate the usage of the token’s ecosystem. </p>
+            <p>We believe this platform will not only give the holders an opportunity to invest, it will also be a whole lot of fun. Prepare for live concerts, charity auctions, battle of the bands and many games to be fully entertained at Rock Finance and support our music industry.</p>
             <div className="buttons">
               <Link to="#" className="btn1">WHITEPAPER</Link>
             </div>
@@ -35,17 +35,17 @@ class About extends Component {
             <div className="about-content">
               <ReactWOW animation={this.props.animate} duration="1s">
                 <h2 className="f-40 fw-400">
-                About The Rock Token
+                What is Rock Finance?
                     </h2>
               </ReactWOW>
               <ReactWOW animation={this.props.animate} duration="1.3s">
-                <p>Rock token is.....</p>
+                <p>Rock Finance is a decentralized finance platform aiming to unite investors, rock fans and musicians all over the world with the goal of impacting the growth and development of the rock music industry. </p>
               </ReactWOW>
               <ReactWOW animation={this.props.animate} duration="1.6s">
-                <p>Rock token is.....</p>
+                <p>Lately, many DeFi platforms have emerged, but most of them have failed to present a unique use case with real world applications to stimulate the usage of the token’s ecosystem. </p>
               </ReactWOW>
               <ReactWOW animation={this.props.animate} duration="1.9s">
-                <p>Rock token is.....</p>
+                <p>We believe this platform will not only give the holders an opportunity to invest, it will also be a whole lot of fun. Prepare for live concerts, charity auctions, battle of the bands and many games to be fully entertained at Rock Finance and support our music industry.</p>
               </ReactWOW>
               <div className="buttons">
                 <Link to="#" className="btn1">WHITEPAPER</Link>

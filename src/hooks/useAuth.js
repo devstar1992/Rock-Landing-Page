@@ -22,11 +22,10 @@ const useAuth = () => {
   const { enqueueSnackbar } = useSnackbar();
 
   const login = useCallback((connectorID) => {
+    console.log(connectorID);
     const connector = connectorsByName[connectorID];
     if (connector) {
       activate(connector, async (error) => {
-        console.log('activated');
-        console.log(error);
         if (error instanceof UnsupportedChainIdError) {
           const hasSetup = await setupNetwork();
           if (hasSetup) {

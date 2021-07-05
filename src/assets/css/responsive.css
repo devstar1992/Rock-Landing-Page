@@ -35,6 +35,9 @@
     width: 100%;
     text-align: center;
   }
+  .slider-area .carousel {
+    padding: 50vh 0;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -111,7 +114,7 @@
     height: auto;
   }
   .slider-area .carousel {
-    padding: 30vh 0;
+    padding: 50vh 0;
   }
 }
 
@@ -185,7 +188,7 @@
     padding: 50px;
   }
   .slider-area .carousel {
-    padding: 30vh 0 25vh;
+    padding: 50vh 0 25vh;
   }
 }
 
@@ -203,7 +206,7 @@
     padding: 40px 0;
   }
   .slider-area .carousel {
-    padding: 30vh 0 20vh;
+    padding: 50vh 0 20vh;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -294,9 +297,7 @@
     height: 189px;
     line-height: 182px;
   }
-  .btc_timer_section_wrapper {
-    padding-top: 90px;
-  }
+
   .slider-area .slider-content h2 {
     font-size: 40px;
   }

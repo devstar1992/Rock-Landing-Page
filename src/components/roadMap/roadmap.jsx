@@ -37,6 +37,7 @@ class Roadmap extends Component {
     let contents = (
       <ul>
         <li>
+          <div className="guitar-start"></div>
           <span className="years">
             <span className="con">2021</span>
           </span>

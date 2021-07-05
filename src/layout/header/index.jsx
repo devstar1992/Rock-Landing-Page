@@ -119,15 +119,28 @@ const Header = () => {
       >
         <Container fluid>
           <Row>
-            <Col className="col-xs-6" sm={12} md={3} lg={3}>
+            <Col className="col-xs-6" sm={12} md={4} lg={3}>
               <div className="logo-area">
-                <Link to={Config.defaultPath}>
-                   <img src={logo} alt="logo" />
-                
-                </Link>
+                <ul>
+                <li className="slider_social_icon1">
+                    <Link to="#"><img src={logo} alt="logo" /></Link>
+                  </li>
+                  <li className="slider_social_icon2">
+                    <Link to="#"><i className="fa fa-facebook"></i></Link>
+                  </li>
+                  <li className="slider_social_icon3">
+                    <Link to="#"><i className="fa fa-twitter"></i></Link>
+                  </li>
+                  <li className="slider_social_icon4">
+                    <Link to="#"><i className="fa fa-send-o"></i></Link>
+                  </li>
+                  <li className="slider_social_icon5">
+                    <Link to="#"><i className="fa fa-envelope"></i></Link>
+                  </li>
+                </ul>
               </div>
             </Col>
-            <Col lg={9} md={9} sm={12} className="col-xs-6">
+            <Col lg={9} md={8} sm={12} className="col-xs-6">
               <div className="menu-area hidden-xs">
                 <nav className="wd_single_index_menu btc_main_menu">
                   {navigation}
@@ -209,7 +222,7 @@ const Header = () => {
                   }}
                 >
                   <h1>
-                    <Link to={Config.defaultPath}>Bit Money</Link>
+                    <Link to={Config.defaultPath}>Rock token</Link>
                   </h1>
                   <div onClick={toggleNavMenu} id="toggle_close">
                     &times;
@@ -217,6 +230,18 @@ const Header = () => {
                   <div id="cssmenu" className="wd_single_index_menu">
                     {navigation}
                   </div>
+                  <div className="login-btn">
+                  {account ? (
+                    <button className="btn1" onClick={onPresentAccountModal}>
+                      {account.substr(0, 4)+"..."+account.substr(account.length-4, 4)}
+                    </button>
+                  ) : (
+                    <button className="btn1" onClick={onPresentConnectModal}>
+                      Connect Wallet
+                    </button>
+                  )}
+                  </div>
+                  
                 </div>
               </div>
             </Col>
