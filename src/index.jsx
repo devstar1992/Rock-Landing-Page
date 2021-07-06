@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { Web3ReactProvider } from "@web3-react/core";
 import { getLibrary } from "utility/web3React";
 import { ThemeContextProvider } from "contexts/ThemeContext";
-import { ModalProvider } from "@pancakeswap/uikit";
+import { ModalProvider } from "@pancakeswap-v3/uikit";
 import { BrowserRouter } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 import store from "./redux/";

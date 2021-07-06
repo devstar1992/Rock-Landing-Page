@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import { useWalletModal } from "@pancakeswap/uikit";
+import { useWalletModal } from "@pancakeswap-v3/uikit";
 import { useWeb3React } from "@web3-react/core";
 import logo from "assets/images/logo/logo.png";
 import flag from "../../assets/images/icons/12.png";

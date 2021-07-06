@@ -11,6 +11,7 @@ import video6 from "../../assets/images/video/6.png";
 import video7 from "../../assets/images/video/7.png";
 import video8 from "../../assets/images/video/8.png";
 import video9 from "../../assets/images/video/9.png";
+import video11 from "../../assets/images/video/11.png";
 import "react-modal-video/scss/modal-video.scss";
 import "video.js/dist/video-js.min.css";
 
@@ -53,8 +54,14 @@ class Roadmap extends Component {
                   </div>
                   <div className="dright">
                     <div className="content">
-                      <h3>Idea</h3>
-                      <p>(April - May)</p>
+                      <h3>Idea & Tokenomics & Recruiment</h3>
+                      <p>
+                        Project Ideation <br />
+                        Tokenomics <br />
+                        Social Media Platform Creation <br />
+                        Core Team Recruitment
+                      </p>
+                      <p>( Q1 )</p>
                     </div>
                   </div>
                 </div>
@@ -65,8 +72,15 @@ class Roadmap extends Component {
                 <div className="dbox">
                   <div className="dleft">
                     <div className="content">
-                      <h3>Market Research</h3>
-                      <p>(April - May)</p>
+                      <h3>
+                        Market Research
+                        <br /> & ICO
+                      </h3>
+                      <p>
+                        ICO Website <br />
+                        ICO Listings
+                      </p>
+                      <p>( Q2 )</p>
                     </div>
                   </div>
                   <div className="dright">
@@ -85,13 +99,17 @@ class Roadmap extends Component {
                 <div className="dbox">
                   <div className="dleft">
                     <div className="imgs">
-                      <img src={video3} alt="video" />
+                      <img src={video6} alt="video" />
                     </div>
                   </div>
                   <div className="dright">
                     <div className="content">
-                      <h3>Formation of foundersteam Business plan</h3>
-                      <p>May - June</p>
+                      <h3>Presale</h3>
+                      <p>
+                        Pre-Sale ICO Launch <br />
+                        ICO Offerings to Jazz Holders
+                      </p>
+                      <p>( Q3 )</p>
                     </div>
                   </div>
                 </div>
@@ -103,10 +121,72 @@ class Roadmap extends Component {
                   <div className="dleft">
                     <div className="content">
                       <h3>
-                        Start of Platform
-                        <br /> Development
+                        Rock Finance <br />
+                        Platform Launch
                       </h3>
-                      <p>May - June</p>
+                      <p>
+                        Swap/Exchange <br />
+                        Solos/Duos
+                        <br />
+                        /Jam Sessions <br />
+                        Encore
+                      </p>
+                      <p>( Q3 )</p>
+                    </div>
+                  </div>
+                  <div className="dright">
+                    <div className="imgs">
+                      <img src={video8} alt="video" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </div>
+          <div className="serials">
+            <span className="cre"></span>
+            <Col sm={6} className="col-xs-12 left-con">
+              <div className="box-con">
+                <div className="dbox">
+                  <div className="dleft">
+                    <div className="imgs">
+                      <img src={video11} alt="video" />
+                    </div>
+                  </div>
+                  <div className="dright">
+                    <div className="content">
+                      <h3>
+                        Marketing <br /> Campaigns (1)
+                      </h3>
+                      <p>
+                        Mosh Pit <br />
+                        Casino Games <br />
+                        Lucky Draw <br />
+                        New Reward Token Amped
+                      </p>
+                      <p>( Q4 )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col sm={6} className="col-xs-12 right-con">
+              <div className="box-con">
+                <div className="dbox">
+                  <div className="dleft">
+                    <div className="content">
+                      <h3>
+                        Marketing <br />
+                        Campaigns (2)
+                      </h3>
+                      <p>
+                        Rock Finance Shop
+                        <br />
+                        CMC / CG / <br /> DAppRadar Listings
+                        <br />
+                        Audits
+                      </p>
+                      <p>( Q4 )</p>
                     </div>
                   </div>
                   <div className="dright">
@@ -118,94 +198,12 @@ class Roadmap extends Component {
               </div>
             </Col>
           </div>
-          <div className="serials">
-            <span className="cre"></span>
-            <Col sm={6} className="col-xs-12 left-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="imgs">
-                      <img src={video5} alt="video" />
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="content">
-                      <h3>
-                        WhitePaper
-                        <br /> Landing page
-                      </h3>
-                      <p>June - Julys</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col sm={6} className="col-xs-12 right-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="content">
-                      <h3>
-                        Pre-Sale
-                        <br />
-                        ICO Launch
-                      </h3>
-                      <p>Julys - August</p>
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="imgs">
-                      <img src={video6} alt="video" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </div>
-          <div className="serials">
-            <span className="cre"></span>
-            <Col sm={6} className="col-xs-12 left-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="imgs">
-                      <img src={video8} alt="video" />
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="content">
-                      <h3>Platform Launch</h3>
-                      <p>Swap platform, Pool, Staking, Audit and Farms</p>
-                      <p>July - August</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col sm={6} className="col-xs-12 right-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="content">
-                      <h3>Casino Games</h3>
-                      <p>
-                        Slot machine,
-                        <br /> Poker, Roulette,
-                        <br /> Publishing CK, CMC
-                      </p>
-                      <p>July - September</p>
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="imgs">
-                      <img src={video8} alt="video" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </div>
-          <div className="serials">
+        </li>
+        <li>
+          <span className="years">
+            <span className="con">2022</span>
+          </span>
+          <div className="serials" style={{ padding: "100px 0 100px 0" }}>
             <span className="cre"></span>
             <Col sm={12} className="col-xs-12 center-con">
               <div className="box-con">
@@ -218,11 +216,9 @@ class Roadmap extends Component {
                   <div className="dright">
                     <div className="content">
                       <h3>
-                        School bands
-                        <br />
-                        Charity
+                        Battle of the Bands Recording Studio <br />
+                        New Partnerships <br />
                       </h3>
-                      <p>Help schoolbands by donation</p>
                     </div>
                   </div>
                 </div>
@@ -245,6 +241,7 @@ class Roadmap extends Component {
       contents = (
         <ul>
           <li>
+            <div className="guitar-start"></div>
             <span className="years">
               <span className="con">2021</span>
             </span>
@@ -261,8 +258,14 @@ class Roadmap extends Component {
                       </div>
                       <div className="dright">
                         <div className="content">
-                          <h3>Idea</h3>
-                          <p>(April - May)</p>
+                          <h3>Idea & Tokenomics & Recruiment</h3>
+                          <p>
+                            Project Ideation <br />
+                            Tokenomics <br />
+                            Social Media Platform Creation <br />
+                            Core Team Recruitment
+                          </p>
+                          <p>( Q1 )</p>
                         </div>
                       </div>
                     </div>
@@ -275,8 +278,15 @@ class Roadmap extends Component {
                     <div className="dbox">
                       <div className="dleft">
                         <div className="content">
-                          <h3>Market Research</h3>
-                          <p>(April - May)</p>
+                          <h3>
+                            Market Research
+                            <br /> & ICO
+                          </h3>
+                          <p>
+                            ICO Website <br />
+                            ICO Listings
+                          </p>
+                          <p>( Q2 )</p>
                         </div>
                       </div>
                       <div className="dright">
@@ -297,13 +307,17 @@ class Roadmap extends Component {
                     <div className="dbox">
                       <div className="dleft">
                         <div className="imgs">
-                          <img src={video3} alt="video" />
+                          <img src={video6} alt="video" />
                         </div>
                       </div>
                       <div className="dright">
                         <div className="content">
-                          <h3>Formation of foundersteam Business plan</h3>
-                          <p>May - June</p>
+                          <h3>Presale</h3>
+                          <p>
+                            Pre-Sale ICO Launch <br />
+                            ICO Offerings to Jazz Holders
+                          </p>
+                          <p>( Q3 )</p>
                         </div>
                       </div>
                     </div>
@@ -317,15 +331,22 @@ class Roadmap extends Component {
                       <div className="dleft">
                         <div className="content">
                           <h3>
-                            Start of Platform
-                            <br /> Development
+                            Rock Finance <br />
+                            Platform Launch
                           </h3>
-                          <p>May - June</p>
+                          <p>
+                            Swap/Exchange <br />
+                            Solos/Duos
+                            <br />
+                            /Jam Sessions <br />
+                            Encore
+                          </p>
+                          <p>( Q3 )</p>
                         </div>
                       </div>
                       <div className="dright">
                         <div className="imgs">
-                          <img src={video4} alt="video" />
+                          <img src={video8} alt="video" />
                         </div>
                       </div>
                     </div>
@@ -341,16 +362,21 @@ class Roadmap extends Component {
                     <div className="dbox">
                       <div className="dleft">
                         <div className="imgs">
-                          <img src={video5} alt="video" />
+                          <img src={video11} alt="video" />
                         </div>
                       </div>
                       <div className="dright">
                         <div className="content">
                           <h3>
-                            WhitePaper
-                            <br /> Landing page
+                            Marketing <br /> Campaigns (1)
                           </h3>
-                          <p>June - Julys</p>
+                          <p>
+                            Mosh Pit <br />
+                            Casino Games <br />
+                            Lucky Draw <br />
+                            New Reward Token Amped
+                          </p>
+                          <p>( Q4 )</p>
                         </div>
                       </div>
                     </div>
@@ -364,16 +390,22 @@ class Roadmap extends Component {
                       <div className="dleft">
                         <div className="content">
                           <h3>
-                            Pre-Sale
-                            <br />
-                            ICO Launch
+                            Marketing <br />
+                            Campaigns (2)
                           </h3>
-                          <p>Julys - August</p>
+                          <p>
+                            Rock Finance Shop
+                            <br />
+                            CMC / CG / <br /> DAppRadar Listings
+                            <br />
+                            Audits
+                          </p>
+                          <p>( Q4 )</p>
                         </div>
                       </div>
                       <div className="dright">
                         <div className="imgs">
-                          <img src={video6} alt="video" />
+                          <img src={video4} alt="video" />
                         </div>
                       </div>
                     </div>
@@ -381,56 +413,39 @@ class Roadmap extends Component {
                 </Col>
               </ReactWOW>
             </div>
-            <div className="serials">
+          </li>
+          <li>
+            <span className="years">
+              <span className="con">2022</span>
+            </span>
+            <div className="serials" style={{ padding: "100px 0 100px 0" }}>
               <span className="cre"></span>
-              <ReactWOW animation={this.props.animate} duration="2.8s">
+              <ReactWOW animation={this.props.animate} duration="1s">
                 <Col sm={6} className="col-xs-12 left-con">
                   <div className="box-con">
                     <div className="dbox">
                       <div className="dleft">
                         <div className="imgs">
-                          <img src={video8} alt="video" />
+                          <img src={video2} alt="video" />
                         </div>
                       </div>
                       <div className="dright">
                         <div className="content">
-                          <h3>Platform Launch</h3>
-                          <p>Swap platform, Pool, Staking, Audit and Farms</p>
-                          <p>July - August</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-              <ReactWOW animation={this.props.animate} duration="3.1s">
-                <Col sm={6} className="col-xs-12 right-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="content">
-                          <h3>Casino Games</h3>
+                          <h3>Idea & Tokenomics & Recruiment</h3>
                           <p>
-                            Slot machine,
-                            <br /> Poker, Roulette,
-                            <br /> Publishing CK, CMC
+                            Project Ideation <br />
+                            Tokenomics <br />
+                            Social Media Platform Creation <br />
+                            Core Team Recruitment
                           </p>
-                          <p>July - September</p>
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="imgs">
-                          <img src={video8} alt="video" />
+                          <p>( Q1 )</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </Col>
               </ReactWOW>
-            </div>
-            <div className="serials">
-              <span className="cre"></span>
-              <ReactWOW animation={this.props.animate} duration="3.4s">
+              <ReactWOW animation={this.props.animate} duration="1.3s">
                 <Col sm={12} className="col-xs-12 center-con">
                   <div className="box-con">
                     <div className="dbox">
@@ -442,11 +457,9 @@ class Roadmap extends Component {
                       <div className="dright">
                         <div className="content">
                           <h3>
-                            School bands
-                            <br />
-                            Charity
+                            Battle of the Bands Recording Studio <br />
+                            New Partnerships <br />
                           </h3>
-                          <p>Help schoolbands by donation</p>
                         </div>
                       </div>
                     </div>

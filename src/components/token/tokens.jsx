@@ -121,28 +121,81 @@ class Tokens extends Component {
             className="col-xs-12 mr-t30 jazz-holders"
           >
             <h3>For Jazz Holders</h3>
-            <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-              <div className="mr-b10">
-                <span className="text-label">You send (BNB) : </span>
-                <input type="number" className="text-number" />
-              </div>
-              <div className="mr-b20">
-                <span className="text-label">You get (Rock) : </span>
-                <input type="number" className="text-number" />
-              </div>
-              <div className="buttons">
-                <button
-                  className="btn1"
-                  style={{
-                    height: "40px",
-                    padding: "0 54px",
-                    lineHeight: "20px",
-                  }}
-                >
-                  Buy Presale Token
-                </button>
-              </div>
-              <div className="buttons mr-t10">
+            <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
+              <Col
+                lg={6}
+                md={6}
+                sm={12}
+                className="col-xs-12 text-center pd-t20"
+              >
+                <div className="progressbar-container">
+                  <div
+                    className="progressbar-complete"
+                    style={{ width: `30%` }}
+                  >
+                    <div className="progressbar-liquid"></div>
+                  </div>
+                  <span className="progress-percent">30% Sold</span>
+                </div>
+                <br />
+                <p className="f-20 fw-400 fc-white">
+                  Presale Total Amount: 10 billion Rock
+                </p>
+              </Col>
+              <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+                <div className="mr-b10">
+                  <span className="text-label">You send (BNB) : </span>
+                  <input type="number" className="text-number" />
+                </div>
+                <div className="mr-b20">
+                  <span className="text-label">You get (Rock) : </span>
+                  <input type="number" className="text-number" />
+                </div>
+                <div className="buttons">
+                  <button
+                    className="btn1"
+                    style={{
+                      height: "40px",
+                      padding: "0 54px",
+                      lineHeight: "20px",
+                    }}
+                  >
+                    Buy Presale Token
+                  </button>
+                </div>
+              </Col>
+            </Col>
+            <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
+              <Col
+                lg={6}
+                md={6}
+                sm={12}
+                className="col-xs-12 text-center pd-t20"
+              >
+                <div className="progressbar-container">
+                  <div
+                    className="progressbar-complete"
+                    style={{ width: `30%` }}
+                  >
+                    <div className="progressbar-liquid"></div>
+                  </div>
+                  <span className="progress-percent">30% Sold</span>
+                </div>
+                <br />
+                <p className="f-20 fw-400 fc-white">
+                  Presale Total Amount: 10 billion Rock
+                </p>
+              </Col>
+              <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
+                <div className="mr-b10">
+                  <span className="text-label">You send (BNB) : </span>
+                  <input type="number" className="text-number" />
+                </div>
+                <div className="mr-b20">
+                  <span className="text-label">You get (Rock) : </span>
+                  <input type="number" className="text-number" />
+                </div>
+                <div className="buttons mr-t10">
                 <button
                   className="btn1"
                   style={{
@@ -154,30 +207,20 @@ class Tokens extends Component {
                   Approve
                 </button>
               </div>
-            </Col>
-            <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-              <div className="mr-b10">
-                <span className="text-label">You send (Jazz) : </span>
-                <input type="number" className="text-number" />
-              </div>
-              <div className="mr-b20">
-                <span className="text-label">You get (Rock) : </span>
-                <input type="number" className="text-number" />
-              </div>
-              <div className="buttons">
-                <button
-                  className="btn1"
-                  style={{
-                    height: "40px",
-                    padding: "0 54px",
-                    lineHeight: "20px",
-                  }}
-                >
-                  Buy Presale Token
-                </button>
-              </div>
-            </Col>
-          </Col>
+                <div className="buttons mr-t10">
+                  <button
+                    className="btn1"
+                    style={{
+                      height: "40px",
+                      padding: "0 54px",
+                      lineHeight: "20px",
+                    }}
+                  >
+                    Buy Presale Token
+                  </button>
+                </div>
+              </Col>
+            </Col>          </Col>
           <Col lg={12} md={12} sm={12} className="col-xs-12 text-center">
             <p className="token-con">
               The sale of tokens It is a long established fact that a reader

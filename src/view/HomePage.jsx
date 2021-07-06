@@ -26,9 +26,7 @@ class HomePage extends Component {
           <Tokens />
           <Teams fill="#2C2E53" />
         </div>
-        <div className="wd_scroll_wrap">
-          <Subscribe />
-        </div>
+       
       </Fragment>
     );
   }
