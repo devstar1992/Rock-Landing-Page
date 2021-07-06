@@ -7,7 +7,9 @@ import { ThemeContextProvider } from "contexts/ThemeContext";
 import { ModalProvider } from "@pancakeswap-v3/uikit";
 import { BrowserRouter } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
-import store from "./redux/";
+import storePersist from "./redux/";
+import { PersistGate } from "redux-persist/es/integration/react";
+
 import * as serviceWorker from "./serviceWorker";
 import Config from "./configure";
 import Spinner from "./components/spinner/Spinner";
@@ -28,18 +30,20 @@ const root = document.getElementById("root");
 
 ReactDOM.render(
   <Web3ReactProvider getLibrary={getLibrary}>
-    <Provider store={store}>
-      <SnackbarProvider maxSnack={3}>
-        <ThemeContextProvider>
-          <ModalProvider>
-            <BrowserRouter basename={Config.basename}>
-              <Suspense fallback={Spinner}>
-                <App />
-              </Suspense>
-            </BrowserRouter>
-          </ModalProvider>
-        </ThemeContextProvider>
-      </SnackbarProvider>
+    <Provider store={storePersist.store}>
+      <PersistGate persistor={storePersist.persistor}>
+        <SnackbarProvider maxSnack={3}>
+          <ThemeContextProvider>
+            <ModalProvider>
+              <BrowserRouter basename={Config.basename}>
+                <Suspense fallback={Spinner}>
+                  <App />
+                </Suspense>
+              </BrowserRouter>
+            </ModalProvider>
+          </ThemeContextProvider>
+        </SnackbarProvider>
+      </PersistGate>
     </Provider>
   </Web3ReactProvider>,
   root

@@ -9,25 +9,28 @@ import {
   UserRejectedRequestError as UserRejectedRequestErrorWalletConnect,
   WalletConnectConnector,
 } from "@web3-react/walletconnect-connector";
-import { ConnectorNames, connectorLocalStorageKey } from "@pancakeswap-v3/uikit";
+import {
+  // ConnectorNames,
+  connectorLocalStorageKey,
+} from "@pancakeswap-v3/uikit";
 import { connectorsByName } from "utility/web3React";
 import { setupNetwork } from "utility/wallet";
 import { useSnackbar } from "notistack";
+
 // import { profileClear } from "state/profile";
 // import { useAppDispatch } from "state";
 
-const useAuth = () => {
+const useAuth = (network) => {
   // const dispatch = useAppDispatch();
   const { activate, deactivate } = useWeb3React();
   const { enqueueSnackbar } = useSnackbar();
-
   const login = useCallback((connectorID) => {
-    console.log(connectorID);
-    const connector = connectorsByName[connectorID];
+    const connector = connectorsByName(network)[connectorID];
     if (connector) {
       activate(connector, async (error) => {
+        
         if (error instanceof UnsupportedChainIdError) {
-          const hasSetup = await setupNetwork();
+          const hasSetup = await setupNetwork(network);
           if (hasSetup) {
             activate(connector);
           }
@@ -61,8 +64,9 @@ const useAuth = () => {
     } else {
       enqueueSnackbar("The connector config is wrong", {
         variant: "error",
-      });   
+      });
     }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

@@ -1,26 +1,70 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import { useWalletModal } from "@pancakeswap-v3/uikit";
+import {
+  useWalletModal,
+  useModal,
+  Button,
+  Modal,
+  LinkExternal,
+} from "@pancakeswap-v3/uikit";
 import { useWeb3React } from "@web3-react/core";
 import logo from "assets/images/logo/logo.png";
+
 import flag from "../../assets/images/icons/12.png";
 import Config from "../../configure";
 import $ from "jquery";
 import useAuth from "hooks/useAuth";
-
-const Header = () => {
+import { connect } from "react-redux";
+import { switchNetwork } from "redux/actions/network";
+const Header = ({ network, switchNetwork }) => {
   const [navMenuMobile, setNavMenuMobile] = useState(false);
   const [scroll, setScroll] = useState(0);
   const [top, setTop] = useState(0);
   const [height, setHeight] = useState(0);
   const { account } = useWeb3React();
-  const { login, logout } = useAuth();
-  const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(
-    login,
-    logout,
-    account
+  const onConnect = (arg) => () => {
+    switchNetwork(arg);
+    modals[arg].onPresentConnectModal();
+  };
+  let networkModal = (
+    <Modal title={"Select a network"} onDismiss={() => {}}>
+      <Button variant="primary" onClick={onConnect(56)} width="100%">
+        Binance Smart Chain
+      </Button>
+      <br />
+      <Button variant="primary" onClick={onConnect(97)} width="100%">
+        Binance Smart Chain Testnet
+      </Button>
+      <br />
+      <Button variant="primary" onClick={onConnect(137)} width="100%">
+        Matic Mainnet
+      </Button>
+      <br />
+      <Button variant="primary" onClick={onConnect(80001)} width="100%">
+        Matic Testnet
+      </Button>
+    </Modal>
   );
+  const [onNetworkModal] = useModal(networkModal);
+  const auths = {
+    56: useAuth(56),
+    97: useAuth(97),
+    137: useAuth(137),
+    80001: useAuth(80001),
+  };
+  const modals = {
+    56: useWalletModal(auths["56"].login, auths["56"].logout, account, 56),
+    97: useWalletModal(auths["97"].login, auths["97"].logout, account, 97),
+    137: useWalletModal(auths["137"].login, auths["137"].logout, account, 137),
+    80001: useWalletModal(
+      auths["80001"].login,
+      auths["80001"].logout,
+      account,
+      80001
+    ),
+  };
+
   let mount;
   const toggleNavMenu = () => {
     setNavMenuMobile(!navMenuMobile);
@@ -97,7 +141,7 @@ const Header = () => {
         <a className="nav-link" href="#features">
           Features
         </a>
-      </li>    
+      </li>
       <li>
         <a className="nav-link" href="#road_map">
           Road Map
@@ -107,7 +151,7 @@ const Header = () => {
         <a className="nav-link" href="#tokens">
           Presale
         </a>
-      </li>     
+      </li>
     </ul>
   );
   return (
@@ -122,20 +166,30 @@ const Header = () => {
             <Col className="col-xs-6" sm={12} md={4} lg={3}>
               <div className="logo-area">
                 <ul>
-                <li className="slider_social_icon1">
-                    <Link to="#"><img src={logo} alt="logo" /></Link>
+                  <li className="slider_social_icon1">
+                    <Link to="#">
+                      <img src={logo} alt="logo" />
+                    </Link>
                   </li>
                   <li className="slider_social_icon2">
-                    <Link to="#"><i className="fa fa-facebook"></i></Link>
+                    <Link to="#">
+                      <i className="fa fa-facebook"></i>
+                    </Link>
                   </li>
                   <li className="slider_social_icon3">
-                    <Link to="#"><i className="fa fa-twitter"></i></Link>
+                    <Link to="#">
+                      <i className="fa fa-twitter"></i>
+                    </Link>
                   </li>
                   <li className="slider_social_icon4">
-                    <Link to="#"><i className="fa fa-send-o"></i></Link>
+                    <Link to="#">
+                      <i className="fa fa-send-o"></i>
+                    </Link>
                   </li>
                   <li className="slider_social_icon5">
-                    <Link to="#"><i className="fa fa-envelope"></i></Link>
+                    <Link to="#">
+                      <i className="fa fa-envelope"></i>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -147,11 +201,16 @@ const Header = () => {
                 </nav>
                 <div className="login-btn">
                   {account ? (
-                    <button className="btn1" onClick={onPresentAccountModal}>
-                      {account.substr(0, 4)+"..."+account.substr(account.length-4, 4)}
+                    <button
+                      className="btn1"
+                      onClick={modals[network].onPresentAccountModal}
+                    >
+                      {account.substr(0, 4) +
+                        "..." +
+                        account.substr(account.length - 4, 4)}
                     </button>
                   ) : (
-                    <button className="btn1" onClick={onPresentConnectModal}>
+                    <button className="btn1" onClick={onNetworkModal}>
                       Connect Wallet
                     </button>
                   )}
@@ -231,17 +290,21 @@ const Header = () => {
                     {navigation}
                   </div>
                   <div className="login-btn">
-                  {account ? (
-                    <button className="btn1" onClick={onPresentAccountModal}>
-                      {account.substr(0, 4)+"..."+account.substr(account.length-4, 4)}
-                    </button>
-                  ) : (
-                    <button className="btn1" onClick={onPresentConnectModal}>
-                      Connect Wallet
-                    </button>
-                  )}
+                    {account ? (
+                      <button
+                        className="btn1"
+                        onClick={modals[network].onPresentAccountModal}
+                      >
+                        {account.substr(0, 4) +
+                          "..." +
+                          account.substr(account.length - 4, 4)}
+                      </button>
+                    ) : (
+                      <button className="btn1" onClick={onNetworkModal}>
+                        Connect Wallet
+                      </button>
+                    )}
                   </div>
-                  
                 </div>
               </div>
             </Col>
@@ -252,4 +315,12 @@ const Header = () => {
   );
 };
 
-export default Header;
+const mapStateToProps = (state) => ({
+  network: state.network.chainId,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  switchNetwork: (chainId) => dispatch(switchNetwork(chainId)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
