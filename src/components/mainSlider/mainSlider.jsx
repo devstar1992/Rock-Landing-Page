@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Slider from 'react-animated-slider';
-import Particles from 'react-particles-js';
 import Countdown from '../countdown/countdown';
 
 
@@ -36,26 +35,6 @@ class MainSlider extends Component {
     return (
       <div className="slider-area">
       
-        <Particles
-          style={{ width: window.innerWidth + 'px', height: window.innerHeight + 'px' }}
-          params={{
-            "particles": {
-              "number": {
-                "value": 70
-              },
-              "size": {
-                "value": 5
-              }
-            },
-            "interactivity": {
-              "events": {
-                "onhover": {
-                  "enable": false,
-                  "mode": "repulse"
-                }
-              }
-            }
-          }} />
 
       
         <div className="carousel">
