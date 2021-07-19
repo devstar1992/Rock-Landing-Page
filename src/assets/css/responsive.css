@@ -36,7 +36,7 @@
     text-align: center;
   }
   .slider-area .carousel {
-    padding: 50vh 0;
+    padding: 150px 0 20px;
   }
 }
 
@@ -114,7 +114,7 @@
     height: auto;
   }
   .slider-area .carousel {
-    padding: 50vh 0;
+    padding: 150px 0 20px;
   }
 }
 
@@ -188,7 +188,7 @@
     padding: 50px;
   }
   .slider-area .carousel {
-    padding: 50vh 0 25vh;
+    padding: 150px 0 20px;
   }
 }
 
@@ -206,7 +206,7 @@
     padding: 40px 0;
   }
   .slider-area .carousel {
-    padding: 50vh 0 20vh;
+    padding: 150px 0 20px;
   }
 }
 @media only screen and (max-width: 320px) {

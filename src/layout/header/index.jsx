@@ -10,7 +10,8 @@ import {
 } from "@pancakeswap-v3/uikit";
 import { useWeb3React } from "@web3-react/core";
 import logo from "assets/images/logo/logo.png";
-
+import {FaRegChartBar, FaTelegram, FaTwitter} from "react-icons/fa";
+import {GiCutDiamond, GiStabbedNote} from "react-icons/gi";
 import flag from "../../assets/images/icons/12.png";
 import Config from "../../configure";
 import $ from "jquery";
@@ -143,13 +144,18 @@ const Header = ({ network, switchNetwork }) => {
         </a>
       </li>
       <li>
+        <a className="nav-link" href="#tokenomics">
+          Tokenomics
+        </a>
+      </li>
+      <li>
         <a className="nav-link" href="#road_map">
           Road Map
         </a>
       </li>
       <li>
         <a className="nav-link" href="#tokens">
-          Presale
+          ICO
         </a>
       </li>
     </ul>
@@ -167,28 +173,28 @@ const Header = ({ network, switchNetwork }) => {
               <div className="logo-area">
                 <ul>
                   <li className="slider_social_icon1">
-                    <Link to="#">
-                      <img src={logo} alt="logo" />
-                    </Link>
+                    <a href="http://www.twitter.com/RCKFinance" target="blank">
+                      <FaTwitter />
+                    </a>
                   </li>
                   <li className="slider_social_icon2">
-                    <Link to="#">
-                      <i className="fa fa-facebook"></i>
-                    </Link>
+                    <a href="https://t.me/rockfinancechat" target="blank">
+                      <FaTelegram />
+                    </a>
                   </li>
                   <li className="slider_social_icon3">
-                    <Link to="#">
-                      <i className="fa fa-twitter"></i>
-                    </Link>
+                    <a href="https://dex.guru/token/0x77f2a1e63054c45093abcb0b83f16a0ce79b7018-bsc" target="blank">
+                      <FaRegChartBar />
+                    </a>
                   </li>
                   <li className="slider_social_icon4">
                     <Link to="#">
-                      <i className="fa fa-send-o"></i>
+                      <GiCutDiamond />
                     </Link>
                   </li>
                   <li className="slider_social_icon5">
                     <Link to="#">
-                      <i className="fa fa-envelope"></i>
+                      <GiStabbedNote />
                     </Link>
                   </li>
                 </ul>
@@ -210,7 +216,7 @@ const Header = ({ network, switchNetwork }) => {
                         account.substr(account.length - 4, 4)}
                     </button>
                   ) : (
-                    <button className="btn1" onClick={onNetworkModal}>
+                    <button className="btn-wallet" onClick={onNetworkModal}>
                       Connect Wallet
                     </button>
                   )}
@@ -300,7 +306,7 @@ const Header = ({ network, switchNetwork }) => {
                           account.substr(account.length - 4, 4)}
                       </button>
                     ) : (
-                      <button className="btn1" onClick={onNetworkModal}>
+                      <button className="btn-wallet" onClick={onNetworkModal}>
                         Connect Wallet
                       </button>
                     )}

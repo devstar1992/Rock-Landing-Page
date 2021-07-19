@@ -28,6 +28,7 @@
     "react-countdown-date": "^1.0.0",
     "react-dom": "^16.8.6",
     "react-feather": "^1.1.6",
+    "react-icons": "^4.2.0",
     "react-modal-video": "^1.2.2",
     "react-owl-carousel2": "^0.3.0",
     "react-particles-js": "^2.7.0",
