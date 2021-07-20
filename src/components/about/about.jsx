@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import ReactWOW from 'react-wow';
-import aboutimg from '../../assets/images/about/1.png';
+import React, { Component } from "react";
+import { Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
+import ReactWOW from "react-wow";
+import aboutimg from "../../assets/images/about/1.png";
 
 class About extends Component {
   render() {
@@ -10,14 +10,24 @@ class About extends Component {
       <Row>
         <Col lg={6} md={6} sm={12} className="col-xs-12">
           <div className="about-content">
-            <h2 className="f-40 fw-400">
-            What is Rock Finance?
-            </h2>
+            <h2 className="f-40 fw-400">What is Rock Finance?</h2>
             <p>What is Rock Finance?</p>
-            <p>Lately, many DeFi platforms have emerged, but most of them have failed to present a unique use case with real world applications to stimulate the usage of the token’s ecosystem. </p>
-            <p>We believe this platform will not only give the holders an opportunity to invest, it will also be a whole lot of fun. Prepare for live concerts, charity auctions, battle of the bands and many games to be fully entertained at Rock Finance and support our music industry.</p>
+            <p>
+              Lately, many DeFi platforms have emerged, but most of them have
+              failed to present a unique use case with real world applications
+              to stimulate the usage of the token’s ecosystem.{" "}
+            </p>
+            <p>
+              We believe this platform will not only give the holders an
+              opportunity to invest, it will also be a whole lot of fun. Prepare
+              for live concerts, charity auctions, battle of the bands and many
+              games to be fully entertained at Rock Finance and support our
+              music industry.
+            </p>
             <div className="buttons">
-              <Link to="#" className="btn1">WHITEPAPER</Link>
+              <Link to="#" className="btn1">
+                WHITEPAPER
+              </Link>
             </div>
           </div>
         </Col>
@@ -27,28 +37,43 @@ class About extends Component {
           </div>
         </Col>
       </Row>
-    )
+    );
     if (this.props.animate) {
       page = (
         <Row>
           <Col lg={6} md={6} sm={12} className="col-xs-12">
             <div className="about-content">
               <ReactWOW animation={this.props.animate} duration="1s">
-                <h2 className="f-40 fw-400">
-                What is Rock Finance?
-                    </h2>
+                <h2 className="f-40 fw-400">What is Rock Finance?</h2>
               </ReactWOW>
               <ReactWOW animation={this.props.animate} duration="1.3s">
-                <p>Rock Finance is a decentralized finance platform aiming to unite investors, rock fans and musicians all over the world with the goal of impacting the growth and development of the rock music industry. </p>
+                <p>
+                  Rock Finance is a decentralized finance platform aiming to
+                  unite investors, rock fans and musicians all over the world
+                  with the goal of impacting the growth and development of the
+                  rock music industry.{" "}
+                </p>
               </ReactWOW>
               <ReactWOW animation={this.props.animate} duration="1.6s">
-                <p>Lately, many DeFi platforms have emerged, but most of them have failed to present a unique use case with real world applications to stimulate the usage of the token’s ecosystem. </p>
+                <p>
+                  Lately, many DeFi platforms have emerged, but most of them
+                  have failed to present a unique use case with real world
+                  applications to stimulate the usage of the token’s ecosystem.{" "}
+                </p>
               </ReactWOW>
               <ReactWOW animation={this.props.animate} duration="1.9s">
-                <p>We believe this platform will not only give the holders an opportunity to invest, it will also be a whole lot of fun. Prepare for live concerts, charity auctions, battle of the bands and many games to be fully entertained at Rock Finance and support our music industry.</p>
+                <p>
+                  We believe this platform will not only give the holders an
+                  opportunity to invest, it will also be a whole lot of fun.
+                  Prepare for live concerts, charity auctions, battle of the
+                  bands and many games to be fully entertained at Rock Finance
+                  and support our music industry.
+                </p>
               </ReactWOW>
               <div className="buttons">
-                <Link to="#" className="btn1">WHITEPAPER</Link>
+                <Link to="#" className="btn1">
+                  WHITEPAPER
+                </Link>
               </div>
             </div>
           </Col>
@@ -60,26 +85,126 @@ class About extends Component {
             </ReactWOW>
           </Col>
         </Row>
-      )
+      );
     }
     return (
-      <div id='about' className="wd_scroll_wrap wd_scroll">
-        <div className="about-area pd-t70 pd-b100">
+      <div id="about" className="wd_scroll_wrap wd_scroll">
+        <div class="elementor-background-overlay"></div>
+        <div class="elementor-shape elementor-shape-top" data-negative="false">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 283.5 27.8"
+            preserveAspectRatio="none"
+          >
+            <path
+              class="elementor-shape-fill"
+              d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z"
+            ></path>
+            <path
+              class="elementor-shape-fill"
+              d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z"
+            ></path>
+          </svg>{" "}
+        </div>
+        <div className="about-area pd-t10 pd-b10">
           <Container>
-            {page}
+            <div class="elementor-widget-container">
+              <h3 class="elementor-headline e-animated">
+                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">
+                  Welcome
+                </span>
+                <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+                  <span class="elementor-headline-dynamic-text elementor-headline-text-active">
+                    Rockstars
+                  </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 500 150"
+                    preserveAspectRatio="none"
+                  >
+                    <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path>
+                  </svg>
+                </span>
+                <span class="elementor-headline-plain-text elementor-headline-text-wrapper">
+                  !
+                </span>
+              </h3>
+            </div>
+            <Row
+              className="mr-t110 pd-l30 pd-r30 mr-b40"
+              style={{ textAlign: "center" }}
+            >
+              <Col lg={12}>
+                <div
+                  style={{
+                    fontFamily: '"Saira Semi Condensed", Sans-serif',
+                    fontSize: "24px",
+                    fontWeight: "400",
+                  }}
+                >
+                  Rock is a community-driven DeFi platform that unites
+                  investors, rock fans, and musicians all over the world with
+                  the common goal of growing and developing the rock music
+                  industry.
+                </div>
+                <div
+                  style={{
+                    fontFamily: '"Saira Semi Condensed", Sans-serif',
+                    fontSize: "24px",
+                    fontWeight: "400",
+                  }}
+                >
+                  We believe this platform will not only give the holders an
+                  opportunity to invest, but it will also be a whole lot of fun.
+                </div>
+                <div
+                  style={{
+                    fontFamily: '"Saira Semi Condensed", Sans-serif',
+                    fontSize: "24px",
+                    fontWeight: "400",
+                  }}
+                >
+                  Prepare for live concerts, charity auctions, battle of the
+                  bands, and many games to be fully entertained at Rock Finance,
+                  in support of great talent.
+                </div>
+              </Col>
+            </Row>
           </Container>
+          <div class="elementor-divider">
+            <span class="elementor-divider-separator"></span>
+          </div>{" "}
         </div>
-        <div className="sud">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style={{enableBackground:"new 0 0 1920 181.1"}} space="preserve">
-              <g>
-                  <path style={{fillRule:'evenodd',clipRule:'evenodd',fill: this.props.fill ? this.props.fill : '#10122d'  }} className="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
-                    c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
-                    c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
-                    c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
-                    c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
-              </g>
-            </svg>
-        </div>
+
+        
       </div>
     );
   }

@@ -307,7 +307,7 @@
     text-align: left;
   }
   .logo-area {
-    width: 234px !important;
+    width: 100%;
   }
   .steps-area .steps-heading .right-con span {
     display: none;

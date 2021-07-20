@@ -27,6 +27,7 @@ class MainSlider extends Component {
                 sm={12}
                 // className="col-xs-12 hidden-xs hidden-sm"
               >
+                <h6 className="ready-rock">Are you ready to rock?</h6>
                 <img src={Fingers} alt="Fingers" />
               </Col>
               <Col
