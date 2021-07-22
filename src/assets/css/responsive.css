@@ -120,6 +120,15 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .tokens-area .weeks{
+    width:100%;
+
+  }
+  .buy-inputs{
+    display: flex;
+    flex-direction: column;
+    
+  }
   .video-js {
     width: 400px;
     height: 207px;

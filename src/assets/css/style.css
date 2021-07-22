@@ -2721,9 +2721,12 @@ footer {
 }
 
 footer .footer-bottom {
+  text-align: center;
   display: block;
-  background: #26284e;
-  height: 100px;
+  background-color: #000000;
+    background-image: url(https://trendviziondotcom.wpcomstaging.com/wp-content/uploads/2021/07/Copy-of-TOKENOMICS.png);
+    background-position: center center;
+    background-size: cover;
   line-height: 100px;
   position: relative;
 }
@@ -3766,9 +3769,25 @@ footer .footer-top .con ul li a:hover {
 }
 
 .tokens-area {
-  background: #2c2e53;
-  position: relative;
+  background: url("../images/tokens/back.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position:relative;
 }
+.tokens-area .elementor-shape-fill{
+  fill:#ff7800;
+}
+.tokens-area .elementor-heading-title {
+  color: #ffffff;
+  font-family: "RocknRoll One", Sans-serif;
+  font-size: 65px;
+  font-weight: 600;
+  text-shadow: 0px 0px 27px #f36f01;
+}
+
+
 .tokens-area .tokens {
   display: inline-block;
   position: relative;
@@ -5662,7 +5681,6 @@ canvas {
   background-attachment: fixed;
 }
 
-
 .btn-wallet {
   background-color: red;
   border-radius: 3px;
@@ -5744,4 +5762,132 @@ font-weight: bold;
   list-style-type:disc;
   font-weight: 400;
   color:black;
+}
+
+.tokens-area .weeks{
+  width:20%;
+  margin:0;
+  padding:0;
+  float:left;
+}
+.tokens-area .weeks .weeks-image{
+  width:100%;
+  border:2.4px solid #FF8500;
+  margin-bottom:40px;
+}
+.tokens-area .weeks .elementor-heading-title{
+  background-color: transparent;
+    background-image: linear-gradient(
+180deg
+, #FF8500 0%, #f2295b 100%);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%) inset;
+  color: #FFFFFF;
+    font-family: "Saira Semi Condensed", Sans-serif;
+    font-weight: 600;
+    font-size:inherit;
+    text-align:center;
+}
+.buy-inputs{
+  display: flex;
+  flex-direction: row;
+  float:right;
+}
+.buy-btns{
+  clear:both;
+  padding:0 30px;
+}
+.buy_btn{
+  float:right;
+}
+.MuiButton-contained.buy_btn{
+  background-color:#96F975;
+}
+.MuiButton-contained.buy_btn:hover{
+  background-color:#96F975;
+  color:white
+}
+.MuiButton-contained.buy_btn.swap_btn{
+  background-color:#FFDE79;
+}
+.MuiButton-contained.swap_btn:hover{
+  background-color:#FFDE79;
+  color:white
+}
+.MuiButton-contained.buy_btn.jazz_btn{
+  background-color:#00E4CC;
+}
+.MuiButton-contained.buy_btn.jazz_btn:hover{
+  background-color:#00E4CC;
+  color:white
+}
+.jazzholders-tab{
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer .footer-bottom h4.elementor-heading-title{
+  color: #FF0000;
+    font-family: "RocknRoll One", Sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px rgb(0 0 0 / 99%);
+    text-align: center;
+}
+footer .footer-bottom h2.elementor-heading-title{
+  text-shadow: 0px 0px 10px rgb(252 5 5 / 81%);
+  font-size: inherit;
+  color:black;
+  text-align: center;
+}
+
+footer .footer-bottom h2{
+  font-family: "Roboto", Sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  color:black;
+  text-align: center;
+}
+footer .footer-bottom input{
+  width:100%;
+  height:47px;
+  padding:6px 16px;
+  border:none;
+  display: block;
+}
+input{
+  color:black;
+}
+
+.footer-bottom .elementor-button {
+  display: block;
+  background-color: #e82a00;
+  color: #ffffff;
+  line-height: 17px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 0px 0px 0px 0px;
+  width:100%;
+  height:47px;
+  padding:15px 30px;
+}
+.footer-bottom .elementor-button:hover {
+  background-color: #b52700;
+  color: #ffffff;
+}
+.the-last{
+  border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: rgba(255,255,255,0.25);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.the-last p{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 200;
+  color: white;
+  float: right;
+  line-height: 14px;
 }

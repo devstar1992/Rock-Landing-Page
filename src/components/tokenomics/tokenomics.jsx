@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useCountUp } from "react-countup";
 import { GiStopwatch, GiCrane, GiZigzagLeaf } from "react-icons/gi";
+import {RiRefund2Line} from "react-icons/ri";
 import {SiCashapp} from "react-icons/si";
 import {HiUserGroup} from "react-icons/hi";
 import {ImShield} from "react-icons/im";
@@ -121,7 +122,7 @@ const Tokenomics = () => {
               </Col>
               <Col lg={6} md={6} sm={6} xs={6}>
                 <div class="elementor-icon">
-                  <SiCashapp />
+                  <RiRefund2Line />
                 </div>
                 <div class="elementor-widget-container">
                   <p>Auto LP – Liquidity Lock</p>

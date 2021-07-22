@@ -5,440 +5,137 @@ import TokenDetails from "./tokenDetails";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import TextField from "@material-ui/core/TextField";
-function LinearProgressWithLabel(props) {
-  return (
-    <Box display="flex" alignItems="center">
-      <Box width="100%" mr={1}>
-        <LinearProgress variant="determinate" {...props} />
-      </Box>
-      <Box minWidth={35}>
-        <Typography variant="body2" color="textSecondary">{`${Math.round(
-          props.value
-        )}%`}</Typography>
-      </Box>
-    </Box>
-  );
-}
+import Button from "@material-ui/core/Button";
+import week1 from "../../assets/images/tokens/week-1-2.png";
+import week2 from "../../assets/images/tokens/week-2-3.png";
+import week3 from "../../assets/images/tokens/week-3-1.png";
+import week4 from "../../assets/images/tokens/week-4-1.png";
+import week5 from "../../assets/images/tokens/week-5.png";
+import BuyImg from "../../assets/images/tokens/buy.png";
+import SwapImg from "../../assets/images/tokens/swap.png";
+import JazzImg from "../../assets/images/tokens/jazz-holders.png";
+
 class Tokens extends Component {
   render() {
     let contents = (
       <Row>
         <Col lg={12} md={12} sm={12} className="col-xs-12">
           <div className="section-heading2">
-            <h2>Rounds of Sale of Tokens</h2>
+            <h4 className="elementor-heading-title elementor-size-default">
+              ICO LAUNCH
+            </h4>
           </div>
         </Col>
-        <Col lg={12} md={12} sm={12} className="col-xs-12 ">
-          <Col
-            lg={8}
-            md={8}
-            sm={12}
-            className="col-xs-12 text-center col-lg-offset-2 col-md-offset-2"
-          >
-            <div className="tokens">
-              <div className="token-name">ICO</div>
-              <div className="token-body">
-                <p>10,000,000 token presale</p>
-                <button className="right-btn">Price 1 Rock - $0.50</button>
-                <div className="prices">
-                  <h3 className="f-20">Increasing price every week :</h3>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Time</th>
-                        <th>Price</th>
-                        <th>Supply</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1st week</td>
-                        <td>$0.5</td>
-                        <td>6M</td>
-                      </tr>
-                      <tr>
-                        <td>2nd </td>
-                        <td>$0.75</td>
-                        <td>2M</td>
-                      </tr>
-                      <tr>
-                        <td>3rd</td>
-                        <td>$1</td>
-                        <td>2M</td>
-                      </tr>
-                      <tr>
-                        <td>4th</td>
-                        <td>$1.25</td>
-                        <td>2M</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
-            <Col lg={6} md={6} sm={12} className="col-xs-12 text-center pd-t20">
-              <div className="progressbar-container">
-                <div className="progressbar-complete" style={{ width: `30%` }}>
-                  <div className="progressbar-liquid"></div>
-                </div>
-                <span className="progress-percent">30% Sold</span>
-              </div>
-              <br />
-              <p className="f-20 fw-400 fc-white">
-                Presale Total Amount: 10 billion Rock
-              </p>
-            </Col>
-            <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-              <div className="mr-b10">
-                <span className="text-label">You send (BNB) : </span>
-                <input type="number" className="text-number" />
-              </div>
-              <div className="mr-b20">
-                <span className="text-label">You get (Rock) : </span>
-                <input type="number" className="text-number" />
-              </div>
-              <div className="buttons">
-                <button
-                  className="btn1"
-                  style={{
-                    height: "40px",
-                    padding: "0 54px",
-                    lineHeight: "20px",
-                  }}
-                >
-                  Buy Presale Token
-                </button>
-              </div>
-            </Col>
-          </Col>
-          <Col
-            lg={12}
-            md={12}
-            sm={12}
-            className="col-xs-12 mr-t30 jazz-holders"
-          >
-            <h3>For Jazz Holders</h3>
-            <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
-              <Col
-                lg={6}
-                md={6}
-                sm={12}
-                className="col-xs-12 text-center pd-t20"
-              >
-                <div className="progressbar-container">
-                  <div
-                    className="progressbar-complete"
-                    style={{ width: `30%` }}
-                  >
-                    <div className="progressbar-liquid"></div>
-                  </div>
-                  <span className="progress-percent">30% Sold</span>
-                </div>
-                <br />
-                <p className="f-20 fw-400 fc-white">
-                  Presale Total Amount: 10 billion Rock
-                </p>
-              </Col>
-              <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-                <div className="mr-b10">
-                  <span className="text-label">You send (BNB) : </span>
-                  <input type="number" className="text-number" />
-                </div>
-                <div className="mr-b20">
-                  <span className="text-label">You get (Rock) : </span>
-                  <input type="number" className="text-number" />
-                </div>
-                <div className="buttons">
-                  <button
-                    className="btn1"
-                    style={{
-                      height: "40px",
-                      padding: "0 54px",
-                      lineHeight: "20px",
-                    }}
-                  >
-                    Buy Presale Token
-                  </button>
-                </div>
-              </Col>
-            </Col>
-            <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
-              <Col
-                lg={6}
-                md={6}
-                sm={12}
-                className="col-xs-12 text-center pd-t20"
-              >
-                <div className="progressbar-container">
-                  <div
-                    className="progressbar-complete"
-                    style={{ width: `30%` }}
-                  >
-                    <div className="progressbar-liquid"></div>
-                  </div>
-                  <span className="progress-percent">30% Sold</span>
-                </div>
-                <br />
-                <p className="f-20 fw-400 fc-white">
-                  Presale Total Amount: 10 billion Rock
-                </p>
-              </Col>
-              <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-                <div className="mr-b10">
-                  <span className="text-label">You send (BNB) : </span>
-                  <input type="number" className="text-number" />
-                </div>
-                <div className="mr-b20">
-                  <span className="text-label">You get (Rock) : </span>
-                  <input type="number" className="text-number" />
-                </div>
-                <div className="buttons mr-t10">
-                <button
-                  className="btn1"
-                  style={{
-                    height: "40px",
-                    padding: "0 54px",
-                    lineHeight: "20px",
-                  }}
-                >
-                  Approve
-                </button>
-              </div>
-                <div className="buttons mr-t10">
-                  <button
-                    className="btn1"
-                    style={{
-                      height: "40px",
-                      padding: "0 54px",
-                      lineHeight: "20px",
-                    }}
-                  >
-                    Buy Presale Token
-                  </button>
-                </div>
-              </Col>
-            </Col>          </Col>
-          <Col lg={12} md={12} sm={12} className="col-xs-12 text-center">
-            <p className="token-con">
-              The sale of tokens It is a long established fact that a reader
-              will be distracted by the
-              <span>
-                {" "}
-                readable content of a page when looking at its layout.
-              </span>
-              There are many variations of passages of Lorem Ipsum available.
-              There are many variations of passages.
-            </p>
-          </Col>
+        <Col lg={12} md={12} sm={12} className="col-xs-12 mr-b30">
+          <div className="weeks">
+            <img src={week1} className="weeks-image" />
+            <h2 class="elementor-heading-title">
+              Price: $1.00
+            </h2>
+          </div>
+          <div className="weeks">
+            <img src={week2} className="weeks-image" />
+            <h2 class="elementor-heading-title">
+              Price: $1.50
+            </h2>
+          </div>
+          <div className="weeks">
+            <img src={week3} className="weeks-image" />
+            <h2 class="elementor-heading-title">
+              Price: $2.00
+            </h2>
+          </div>
+          <div className="weeks">
+            <img src={week4} className="weeks-image" />
+            <h2 class="elementor-heading-title">
+              Price: $3.00
+            </h2>
+          </div>
+          <div className="weeks">
+            <img src={week5} className="weeks-image" />
+            <h2 class="elementor-heading-title">
+              Public Sale
+            </h2>
+          </div>
         </Col>
+        <Col lg={12} md={12} sm={12} className="col-xs-12 pd-l20 pd-r20 ">
+          <Row>
+            <Col lg={6} md={6} sm={6} className="col-xs-12 mr-t20">
+              <img src={BuyImg} />
+              <div className="mr-t30 mr-b20 buy-inputs">
+                <input type="number" placeholder="BNB" style={{ width: 250, marginRight: 30, marginTop: 10 }} />
+                <input type="number" placeholder="Rock" style={{ width: 250, marginRight: 30, marginTop: 10 }} />
+              </div>
+              <div className="buy-btns">
+                <Button variant="contained" className="buy_btn">Buy</Button>
+              </div>
+
+            </Col>
+            <Col lg={6} md={6} sm={6} className="col-xs-12 buy-tab mr-t20">
+              <img src={SwapImg} />
+              <div className="mr-t30 mr-b20 buy-inputs">
+                <input type="number" placeholder="JAZZ" style={{ width: 250, marginRight: 30, marginTop: 10 }} />
+                <input type="number" placeholder="Rock" style={{ width: 250, marginRight: 30, marginTop: 10 }} />
+              </div>
+              <div className="buy-btns">
+                <Button variant="contained" className="buy_btn swap_btn">Swap</Button>
+              </div>
+
+            </Col>
+          </Row>
+          <Row>
+            <Col lg='6' md='6' sm='6' className="col-xs-12 jazzholders-tab mr-t20">
+              <img src={JazzImg} />
+              <div className="mr-t30 mr-b20 buy-inputs">
+                <input type="number" placeholder="BNB" style={{ width: 250, marginRight: 30, marginTop: 10 }} />
+                <input type="number" placeholder="Rock" style={{ width: 250, marginRight: 30, marginTop: 10 }} />
+              </div>
+              <div className="buy-btns">
+                <Button variant="contained" className="buy_btn swap_btn jazz_btn">Buy</Button>
+              </div>
+            </Col>
+          </Row>
+        </Col>
+
       </Row>
     );
-    if (this.props.animate) {
-      contents = (
-        <Row>
-          <Col lg={12} md={12} sm={12} className="col-xs-12">
-            <div className="section-heading2">
-              <ReactWOW animation={this.props.animate} duration="1s">
-                <h2>Rounds of Sale of Tokens</h2>
-              </ReactWOW>
-            </div>
-          </Col>
-          <Col
-            lg={12}
-            md={12}
-            sm={12}
-            className="col-xs-12 col-lg-offset-1 col-md-offset-1"
-          >
-            <ReactWOW animation={this.props.animate} duration="1.3s">
-              <Col
-                lg={8}
-                md={8}
-                sm={12}
-                className="col-xs-12 text-center col-lg-offset-2 col-md-offset-2"
-              >
-                <div className="tokens">
-                  <div className="token-name">ICO</div>
-                  <div className="token-body">
-                    <p>10,000,000 token presale</p>
-                    <button className="right-btn">Price 1 Rock - $0.50</button>
-                    <div className="prices">
-                      <h3 className="f-20">Increasing price every week :</h3>
-                      <table>
-                        <thead>
-                          <tr>
-                            <th>Time</th>
-                            <th>Price</th>
-                            <th>Supply</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1st week</td>
-                            <td>$0.5</td>
-                            <td>6M</td>
-                          </tr>
-                          <tr>
-                            <td>2nd </td>
-                            <td>$0.75</td>
-                            <td>2M</td>
-                          </tr>
-                          <tr>
-                            <td>3rd</td>
-                            <td>$1</td>
-                            <td>2M</td>
-                          </tr>
-                          <tr>
-                            <td>4th</td>
-                            <td>$1.25</td>
-                            <td>2M</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            </ReactWOW>
-            <ReactWOW animation={this.props.animate} duration="1.6s">
-              <Col lg={12} md={12} sm={12} className="col-xs-12 mr-t50">
-                <Col
-                  lg={6}
-                  md={6}
-                  sm={12}
-                  className="col-xs-12 text-center pd-t20"
-                >
-                  <div className="progressbar-container">
-                    <div
-                      className="progressbar-complete"
-                      style={{ width: `30%` }}
-                    >
-                      <div className="progressbar-liquid"></div>
-                    </div>
-                    <span className="progress-percent">30% Sold</span>
-                  </div>
-                  <br />
-                  <p className="f-20 fw-400 fc-white">
-                    Presale Total Amount: 10 billion Rock
-                  </p>
-                </Col>
-                <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-                  <div className="mr-b10">
-                    <span className="text-label">You send (BNB) : </span>
-                    <input type="number" className="text-number" />
-                  </div>
-                  <div className="mr-b20">
-                    <span className="text-label">You get (Rock) : </span>
-                    <input type="number" className="text-number" />
-                  </div>
-                  <div className="buttons">
-                    <button
-                      className="btn1"
-                      style={{
-                        height: "40px",
-                        padding: "0 54px",
-                        lineHeight: "20px",
-                      }}
-                    >
-                      Buy Presale Token
-                    </button>
-                  </div>
-                </Col>
-              </Col>
-            </ReactWOW>
-            <ReactWOW animation={this.props.animate} duration="1.9s">
-              <Col
-                lg={12}
-                md={12}
-                sm={12}
-                className="col-xs-12 mr-t30 jazz-holders"
-              >
-                <h3>For Jazz Holders</h3>
-                <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-                  <div className="mr-b10">
-                    <span className="text-label">You send (BNB) : </span>
-                    <input type="number" className="text-number" />
-                  </div>
-                  <div className="mr-b20">
-                    <span className="text-label">You get (Rock) : </span>
-                    <input type="number" className="text-number" />
-                  </div>
-                  <div className="buttons">
-                    <button
-                      className="btn1"
-                      style={{
-                        height: "40px",
-                        padding: "0 54px",
-                        lineHeight: "20px",
-                      }}
-                    >
-                      Buy Presale Token
-                    </button>
-                  </div>
-                  <div className="buttons mr-t10">
-                    <button
-                      className="btn1"
-                      style={{
-                        height: "40px",
-                        padding: "0 54px",
-                        lineHeight: "20px",
-                      }}
-                    >
-                      Approve
-                    </button>
-                  </div>
-                </Col>
-                <Col lg={6} md={6} sm={12} className="col-xs-12 text-right">
-                  <div className="mr-b10">
-                    <span className="text-label">You send (Jazz) : </span>
-                    <input type="number" className="text-number" />
-                  </div>
-                  <div className="mr-b20">
-                    <span className="text-label">You get (Rock) : </span>
-                    <input type="number" className="text-number" />
-                  </div>
-                  <div className="buttons">
-                    <button
-                      className="btn1"
-                      style={{
-                        height: "40px",
-                        padding: "0 54px",
-                        lineHeight: "20px",
-                      }}
-                    >
-                      Buy Presale Token
-                    </button>
-                  </div>
-                </Col>
-              </Col>
-            </ReactWOW>
 
-            <Col lg={12} md={12} sm={12} className="col-xs-12 text-center">
-              <ReactWOW animation={this.props.animate} duration="2.2s">
-                <p className="token-con">
-                  The sale of tokens It is a long established fact that a reader
-                  will be distracted by the
-                  <span>
-                    {" "}
-                    readable content of a page when looking at its layout.
-                  </span>
-                  There are many variations of passages of Lorem Ipsum
-                  available. There are many variations of passages.
-                </p>
-              </ReactWOW>
-            </Col>
-          </Col>
-        </Row>
-      );
-    }
     return (
       <div id="tokens" className="wd_scroll">
         <section className="tokens-area section">
-          <Container>{contents}</Container>
+          <div
+            class="elementor-shape elementor-shape-top"
+            data-negative="false"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 283.5 19.6"
+              preserveAspectRatio="none"
+            >
+              <path
+                class="elementor-shape-fill"
+                style={{ opacity: 0.33 }}
+                d="M0 0L0 18.8 141.8 4.1 283.5 18.8 283.5 0z"
+              ></path>
+              <path
+                class="elementor-shape-fill"
+                style={{ opacity: 0.33 }}
+                d="M0 0L0 12.6 141.8 4 283.5 12.6 283.5 0z"
+              ></path>
+              <path
+                class="elementor-shape-fill"
+                style={{ opacity: 0.33 }}
+                d="M0 0L0 6.4 141.8 4 283.5 6.4 283.5 0z"
+              ></path>
+              <path
+                class="elementor-shape-fill"
+                d="M0 0L0 1.2 141.8 4 283.5 1.2 283.5 0z"
+              ></path>
+            </svg>
+          </div>
+
+          {contents}
         </section>
-        <TokenDetails animate={this.props.animate} />
       </div>
     );
   }

@@ -10,7 +10,6 @@ import PressMedia from '../components/pressmedia/pressmedia';
 import Subscribe from '../components/subscribe/subscribe';
 import MainSlider from '../components/mainSlider/mainSlider';
 import Currency from '../components/currency/currency';
-import Teams from '../components/team/team';
 import Blogs from '../components/blog/blog';
 
 class HomePage extends Component {
@@ -26,7 +25,6 @@ class HomePage extends Component {
         <Roadmap fill="#2C2E53" />
         <div className="wd_scroll_wrap">
           <Tokens />
-          <Teams fill="#2C2E53" />
         </div>
        
       </Fragment>
