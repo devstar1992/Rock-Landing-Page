@@ -1,20 +1,8 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import ReactWOW from "react-wow";
-import ModalVideo from "react-modal-video";
-import poster from "../../assets/images/video/1.png";
-import video2 from "../../assets/images/video/2.png";
-import video3 from "../../assets/images/video/3.png";
-import video4 from "../../assets/images/video/4.png";
-import video5 from "../../assets/images/video/5.png";
-import video6 from "../../assets/images/video/6.png";
-import video7 from "../../assets/images/video/7.png";
-import video8 from "../../assets/images/video/8.png";
-import video9 from "../../assets/images/video/9.png";
-import video11 from "../../assets/images/video/11.png";
-import "react-modal-video/scss/modal-video.scss";
-import "video.js/dist/video-js.min.css";
-
+import Guitar from "../../assets/images/roadmap/Guitar-neck-3.png";
+import { GiLightBulb, GiOldMicrophone } from "react-icons/gi";
+import {IoRocketOutline} from "react-icons/io5";
 class Roadmap extends Component {
   constructor() {
     super();
@@ -28,466 +16,144 @@ class Roadmap extends Component {
     this.setState({ isOpen: true });
   }
   render() {
-    let titleAni = (
-      <h2>
-        Development of Rock token
-        <br />
-        (Road Map)
-      </h2>
-    );
-    let contents = (
-      <ul>
-        <li>
-          <div className="guitar-start"></div>
-          <span className="years">
-            <span className="con">2021</span>
-          </span>
-          <div className="serials">
-            <span className="cre"></span>
-            <Col sm={6} className="col-xs-12 left-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="imgs">
-                      <img src={video2} alt="video" />
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="content">
-                      <h3>Idea & Tokenomics & Recruiment</h3>
-                      <p>
-                        Project Ideation <br />
-                        Tokenomics <br />
-                        Social Media Platform Creation <br />
-                        Core Team Recruitment
-                      </p>
-                      <p>( Q1 )</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col sm={6} className="col-xs-12 right-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="content">
-                      <h3>
-                        Market Research
-                        <br /> & ICO
-                      </h3>
-                      <p>
-                        ICO Website <br />
-                        ICO Listings
-                      </p>
-                      <p>( Q2 )</p>
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="imgs">
-                      <img src={video3} alt="video" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </div>
-          <div className="serials">
-            <span className="cre"></span>
-            <Col sm={6} className="col-xs-12 left-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="imgs">
-                      <img src={video6} alt="video" />
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="content">
-                      <h3>Presale</h3>
-                      <p>
-                        Pre-Sale ICO Launch <br />
-                        ICO Offerings to Jazz Holders
-                      </p>
-                      <p>( Q3 )</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col sm={6} className="col-xs-12 right-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="content">
-                      <h3>
-                        Rock Finance <br />
-                        Platform Launch
-                      </h3>
-                      <p>
-                        Swap/Exchange <br />
-                        Solos/Duos
-                        <br />
-                        /Jam Sessions <br />
-                        Encore
-                      </p>
-                      <p>( Q3 )</p>
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="imgs">
-                      <img src={video8} alt="video" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </div>
-          <div className="serials">
-            <span className="cre"></span>
-            <Col sm={6} className="col-xs-12 left-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="imgs">
-                      <img src={video11} alt="video" />
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="content">
-                      <h3>
-                        Marketing <br /> Campaigns (1)
-                      </h3>
-                      <p>
-                        Mosh Pit <br />
-                        Casino Games <br />
-                        Lucky Draw <br />
-                        New Reward Token Amped
-                      </p>
-                      <p>( Q4 )</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col sm={6} className="col-xs-12 right-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="content">
-                      <h3>
-                        Marketing <br />
-                        Campaigns (2)
-                      </h3>
-                      <p>
-                        Rock Finance Shop
-                        <br />
-                        CMC / CG / <br /> DAppRadar Listings
-                        <br />
-                        Audits
-                      </p>
-                      <p>( Q4 )</p>
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="imgs">
-                      <img src={video4} alt="video" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </div>
-        </li>
-        <li>
-          <span className="years">
-            <span className="con">2022</span>
-          </span>
-          <div className="serials" style={{ padding: "100px 0 100px 0" }}>
-            <span className="cre"></span>
-            <Col sm={12} className="col-xs-12 center-con">
-              <div className="box-con">
-                <div className="dbox">
-                  <div className="dleft">
-                    <div className="imgs">
-                      <img src={video9} alt="video" />
-                    </div>
-                  </div>
-                  <div className="dright">
-                    <div className="content">
-                      <h3>
-                        Battle of the Bands Recording Studio <br />
-                        New Partnerships <br />
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </div>
-        </li>
-      </ul>
-    );
-    if (this.props.animate) {
-      titleAni = (
-        <ReactWOW animation={this.props.animate} duration="1s">
-          <h2>
-            Development of Rock token
-            <br />
-            (Road Map)
-          </h2>
-        </ReactWOW>
-      );
-      contents = (
-        <ul>
-          <li>
-            <div className="guitar-start"></div>
-            <span className="years">
-              <span className="con">2021</span>
-            </span>
-            <div className="serials">
-              <span className="cre"></span>
-              <ReactWOW animation={this.props.animate} duration="1s">
-                <Col sm={6} className="col-xs-12 left-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="imgs">
-                          <img src={video2} alt="video" />
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="content">
-                          <h3>Idea & Tokenomics & Recruiment</h3>
-                          <p>
-                            Project Ideation <br />
-                            Tokenomics <br />
-                            Social Media Platform Creation <br />
-                            Core Team Recruitment
-                          </p>
-                          <p>( Q1 )</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-              <ReactWOW animation={this.props.animate} duration="1.3s">
-                <Col sm={6} className="col-xs-12 right-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="content">
-                          <h3>
-                            Market Research
-                            <br /> & ICO
-                          </h3>
-                          <p>
-                            ICO Website <br />
-                            ICO Listings
-                          </p>
-                          <p>( Q2 )</p>
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="imgs">
-                          <img src={video3} alt="video" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-            </div>
-            <div className="serials">
-              <span className="cre"></span>
-              <ReactWOW animation={this.props.animate} duration="1.6s">
-                <Col sm={6} className="col-xs-12 left-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="imgs">
-                          <img src={video6} alt="video" />
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="content">
-                          <h3>Presale</h3>
-                          <p>
-                            Pre-Sale ICO Launch <br />
-                            ICO Offerings to Jazz Holders
-                          </p>
-                          <p>( Q3 )</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-              <ReactWOW animation={this.props.animate} duration="1.9s">
-                <Col sm={6} className="col-xs-12 right-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="content">
-                          <h3>
-                            Rock Finance <br />
-                            Platform Launch
-                          </h3>
-                          <p>
-                            Swap/Exchange <br />
-                            Solos/Duos
-                            <br />
-                            /Jam Sessions <br />
-                            Encore
-                          </p>
-                          <p>( Q3 )</p>
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="imgs">
-                          <img src={video8} alt="video" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-            </div>
-            <div className="serials">
-              <span className="cre"></span>
-              <ReactWOW animation={this.props.animate} duration="2.2s">
-                <Col sm={6} className="col-xs-12 left-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="imgs">
-                          <img src={video11} alt="video" />
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="content">
-                          <h3>
-                            Marketing <br /> Campaigns (1)
-                          </h3>
-                          <p>
-                            Mosh Pit <br />
-                            Casino Games <br />
-                            Lucky Draw <br />
-                            New Reward Token Amped
-                          </p>
-                          <p>( Q4 )</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-              <ReactWOW animation={this.props.animate} duration="2.5s">
-                <Col sm={6} className="col-xs-12 right-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="content">
-                          <h3>
-                            Marketing <br />
-                            Campaigns (2)
-                          </h3>
-                          <p>
-                            Rock Finance Shop
-                            <br />
-                            CMC / CG / <br /> DAppRadar Listings
-                            <br />
-                            Audits
-                          </p>
-                          <p>( Q4 )</p>
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="imgs">
-                          <img src={video4} alt="video" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-            </div>
-          </li>
-          <li>
-            <span className="years">
-              <span className="con">2022</span>
-            </span>
-            <div className="serials" style={{ padding: "100px 0 100px 0" }}>
-              <span className="cre"></span>
-              <ReactWOW animation={this.props.animate} duration="1s">
-                <Col sm={6} className="col-xs-12 left-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="imgs">
-                          <img src={video2} alt="video" />
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="content">
-                          <h3>Idea & Tokenomics & Recruiment</h3>
-                          <p>
-                            Project Ideation <br />
-                            Tokenomics <br />
-                            Social Media Platform Creation <br />
-                            Core Team Recruitment
-                          </p>
-                          <p>( Q1 )</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-              <ReactWOW animation={this.props.animate} duration="1.3s">
-                <Col sm={12} className="col-xs-12 center-con">
-                  <div className="box-con">
-                    <div className="dbox">
-                      <div className="dleft">
-                        <div className="imgs">
-                          <img src={video9} alt="video" />
-                        </div>
-                      </div>
-                      <div className="dright">
-                        <div className="content">
-                          <h3>
-                            Battle of the Bands Recording Studio <br />
-                            New Partnerships <br />
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </ReactWOW>
-            </div>
-          </li>
-        </ul>
-      );
-    }
     return (
       <div id="road_map" className="wd_scroll_wrap wd_scroll">
-        <section className="video-area section">
-          <Container>
-            <Row>
-              <Col lg={12} md={12} sm={12} className="col-xs-12">
-                <div className="videos-heding">{titleAni}</div>
-              </Col>
-            </Row>
-          </Container>
+        <section className="road_map-area section">
+          <Row>
+            <Col lg={4} md={4} sm={4} className="col-xs-12">
+              <div style={{marginTop:'250px'}}>
+                <Row>
+                  <Col lg={5} md={5} sm={5} xs={5}>
+                    <div className="elementor-icon">
+                      <GiLightBulb />
+                    </div>
+                  </Col>
+                  <Col lg={7} md={7} sm={7} xs={7}>
+                    <div class="elementor-divider">
+                      <span class="elementor-divider-separator"></span>
+                    </div>
+                  </Col>
+                </Row>
+                <Row className="mr-t10">
+                  <Col lg={5} md={5} sm={5} xs={5} className={"titles"}>
+                    <h2>Q2 2021</h2>
+                    <p>May – June</p>
+                  </Col>
+                  <Col lg={7} md={7} sm={7} xs={7} className="contents">
+                    <ul>
+                      <li>
+                        Project Ideation
+                      </li>
+                      <li>
+                      Tokenomics
+                      </li>
+                      <li>
+                      Social Media Platform Creation
+                      </li>
+                      <li>
+                      Core Team Recruitment
+                      </li>
+                    </ul>
+                  </Col>
+                </Row>
+              </div>
+              <div style={{marginTop:'250px'}}>
+                <Row>
+                  <Col lg={5} md={5} sm={5} xs={5}>
+                    <div className="elementor-icon">
+                      <IoRocketOutline />
+                    </div>
+                  </Col>
+                  <Col lg={7} md={7} sm={7} xs={7}>
+                    <div class="elementor-divider">
+                      <span class="elementor-divider-separator"></span>
+                    </div>
+                  </Col>
+                </Row>
+                <Row className="mr-t10">
+                  <Col lg={5} md={5} sm={5} xs={5} className={"titles"}>
+                    <h2>Q3 2021</h2>
+                    <p>August – September</p>
+                  </Col>
+                  <Col lg={7} md={7} sm={7} xs={7} className="contents">
+                    <ul>
+                      <li>
+                      Platform Launch 
+                      </li>
+                      <li>
+                      Swap/Exchange
+                      </li>
+                      <li>
+                      Staking and Farming
+                      </li>
+                      <li>
+                      Referral Program
+                      </li>
+                      <li>
+                      Marketing Campaigns
+                      </li>
+                      <li>
+                      Partnerships
+                      </li>
+                      <li>
+                      CMC/CG/ DAppRadar Listings
+                      </li>
+                      <li>
+                      Initial Audits
+                      </li>
+                    </ul>
+                  </Col>
+                </Row>
+              </div>
+              <div style={{marginTop:'300px'}}>
+                <Row>
+                  <Col lg={5} md={5} sm={5} xs={5}>
+                    <div className="elementor-icon">
+                      <GiOldMicrophone />
+                    </div>
+                  </Col>
+                  <Col lg={7} md={7} sm={7} xs={7}>
+                    <div class="elementor-divider">
+                      <span class="elementor-divider-separator"></span>
+                    </div>
+                  </Col>
+                </Row>
+                <Row className="mr-t10">
+                  <Col lg={5} md={5} sm={5} xs={5} className={"titles"}>
+                    <h2>2022</h2>
+                    <p>January – June</p>
+                  </Col>
+                  <Col lg={7} md={7} sm={7} xs={7} className="contents">
+                    <ul>
+                      <li>
+                        Project Ideation
+                      </li>
+                      <li>
+                      Tokenomics
+                      </li>
+                      <li>
+                      Social Media Platform Creation
+                      </li>
+                      <li>
+                      Core Team Recruitment
+                      </li>
+                    </ul>
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+            <Col lg={4} md={4} sm={4} className="col-xs-12">
+              <img src={Guitar} alt="Guitar" />
+            </Col>
+            <Col lg={4} md={4} sm={4} className="col-xs-12"></Col>
+          </Row>
         </section>
         <div className="wd_scroll_wrap">
           <section className="video-des">
             <Container>
               <Row>
                 <Col lg={12} md={12} sm={12} className="col-xs-12">
-                  <div className="deslidt">{contents}</div>
+                  <div className="deslidt"></div>
                 </Col>
               </Row>
             </Container>

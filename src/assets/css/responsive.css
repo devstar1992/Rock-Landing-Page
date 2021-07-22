@@ -291,12 +291,6 @@
   header .menu-area nav ul li {
     padding: 0 9px;
   }
-  #clockdiv div > span,
-  #clockdiv2 div > span {
-    width: 100px;
-    height: 189px;
-    line-height: 182px;
-  }
 
   .slider-area .slider-content h2 {
     font-size: 40px;

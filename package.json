@@ -26,6 +26,7 @@
     "react": "^16.8.6",
     "react-animated-slider": "^1.1.4",
     "react-countdown-date": "^1.0.0",
+    "react-countup": "^4.4.0",
     "react-dom": "^16.8.6",
     "react-feather": "^1.1.6",
     "react-icons": "^4.2.0",

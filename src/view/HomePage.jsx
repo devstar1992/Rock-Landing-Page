@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import About from '../components/about/about';
 import Features from '../components/features/features';
+import Tokenomics from '../components/tokenomics/tokenomics';
 import Projects from '../components/projects/projects';
 import Steps from '../components/steps/steps';
 import Roadmap from '../components/roadMap/roadmap';
@@ -21,6 +22,7 @@ class HomePage extends Component {
         </div>
         <About fill="#2C2E53" />
         <Features />
+        <Tokenomics />
         <Roadmap fill="#2C2E53" />
         <div className="wd_scroll_wrap">
           <Tokens />
