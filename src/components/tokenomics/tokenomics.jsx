@@ -50,7 +50,7 @@ const Tokenomics = () => {
     <div id="tokenomics" className="wd_scroll_wrap wd_scroll">
       <section className="tokenomics-area section">
         <div
-          class="elementor-shape elementor-shape-bottom"
+          className="elementor-shape elementor-shape-bottom"
           data-negative="false"
         >
           <svg
@@ -59,7 +59,7 @@ const Tokenomics = () => {
             preserveAspectRatio="none"
           >
             <path
-              class="elementor-shape-fill"
+              className="elementor-shape-fill"
               d="M350,10L340,0h20L350,10z"
             ></path>
           </svg>{" "}
@@ -69,7 +69,7 @@ const Tokenomics = () => {
             <img src={TOKENOMICS} alt="Tokenomics" />
           </div>
           <Col lg={4} md={4} sm={12} className="col-xs-12">
-            <h2 class="elementor-heading-title red">
+            <h2 className="elementor-heading-title red">
               Initial Supply Distribution
             </h2>
             <p>Total Supply: 100M</p>
@@ -80,7 +80,7 @@ const Tokenomics = () => {
             />
           </Col>
           <Col lg={4} md={4} sm={12} className="col-xs-12">
-            <h2 class="elementor-heading-title gold">Low Emission Rate</h2>
+            <h2 className="elementor-heading-title gold">Low Emission Rate</h2>
             <p className="mr-b70">
               1 RCK / 1 Block, reduced by 3% every 9,600 blocks until 0.1 RCK /
               1 Block
@@ -95,48 +95,48 @@ const Tokenomics = () => {
             <div className="counter-description mr-t30">Marketing</div>
           </Col>
           <Col lg={4} md={4} sm={12} className="col-xs-12">
-            <h2 class="elementor-heading-title red">Key Features</h2>
+            <h2 className="elementor-heading-title red">Key Features</h2>
             <p className="mr-b70">
               Rock will have many features to sustain the ecosystem
             </p>
             <Row>
               <Col lg={6} md={6} sm={6} xs={6}>
-                <div class="elementor-icon">
+                <div className="elementor-icon">
                   <GiStopwatch />
                 </div>
-                <div class="elementor-widget-container">
+                <div className="elementor-widget-container">
                   <p>Auto Burning Mechanism</p>
                 </div>
-                <div class="elementor-icon">
+                <div className="elementor-icon">
                   <HiUserGroup />
                 </div>
-                <div class="elementor-widget-container">
+                <div className="elementor-widget-container">
                   <p>Deposit Fee Redistribution</p>
                 </div>
-                <div class="elementor-icon">
+                <div className="elementor-icon">
                   <GiZigzagLeaf />
                 </div>
-                <div class="elementor-widget-container">
+                <div className="elementor-widget-container">
                   <p>Harvest Lock Up</p>
                 </div>
               </Col>
               <Col lg={6} md={6} sm={6} xs={6}>
-                <div class="elementor-icon">
+                <div className="elementor-icon">
                   <RiRefund2Line />
                 </div>
-                <div class="elementor-widget-container">
+                <div className="elementor-widget-container">
                   <p>Auto LP – Liquidity Lock</p>
                 </div>
-                <div class="elementor-icon">
+                <div className="elementor-icon">
                   <GiCrane />
                 </div>
-                <div class="elementor-widget-container">
+                <div className="elementor-widget-container">
                   <p>Extraction Fee Redistribution</p>
                 </div>
-                <div class="elementor-icon">
+                <div className="elementor-icon">
                   <ImShield />
                 </div>
-                <div class="elementor-widget-container">
+                <div className="elementor-widget-container">
                   <p>Anti – Hater Protection</p>
                 </div>
               </Col>

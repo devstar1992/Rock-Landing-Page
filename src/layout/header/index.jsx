@@ -169,7 +169,7 @@ const Header = ({ network, switchNetwork }) => {
       >
         <Container fluid>
           <Row>
-            <Col className="col-xs-10" sm={12} md={4} lg={3}>
+            <Col className="col-xs-10" sm={12} md={4} lg={4}>
               <div className="logo-area">
                 <ul>
                   <li className="slider_social_icon1">
@@ -200,7 +200,7 @@ const Header = ({ network, switchNetwork }) => {
                 </ul>
               </div>
             </Col>
-            <Col lg={9} md={8} sm={12} className="col-xs-2">
+            <Col lg={8} md={8} sm={12} className="col-xs-2">
               <div className="menu-area hidden-xs">
                 <nav className="wd_single_index_menu btc_main_menu">
                   {navigation}

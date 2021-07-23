@@ -29,31 +29,31 @@ class Tokens extends Component {
         <Col lg={12} md={12} sm={12} className="col-xs-12 mr-b30">
           <div className="weeks">
             <img src={week1} className="weeks-image" />
-            <h2 class="elementor-heading-title">
+            <h2 className="elementor-heading-title">
               Price: $1.00
             </h2>
           </div>
           <div className="weeks">
             <img src={week2} className="weeks-image" />
-            <h2 class="elementor-heading-title">
+            <h2 className="elementor-heading-title">
               Price: $1.50
             </h2>
           </div>
           <div className="weeks">
             <img src={week3} className="weeks-image" />
-            <h2 class="elementor-heading-title">
+            <h2 className="elementor-heading-title">
               Price: $2.00
             </h2>
           </div>
           <div className="weeks">
             <img src={week4} className="weeks-image" />
-            <h2 class="elementor-heading-title">
+            <h2 className="elementor-heading-title">
               Price: $3.00
             </h2>
           </div>
           <div className="weeks">
             <img src={week5} className="weeks-image" />
-            <h2 class="elementor-heading-title">
+            <h2 className="elementor-heading-title">
               Public Sale
             </h2>
           </div>
@@ -104,7 +104,7 @@ class Tokens extends Component {
       <div id="tokens" className="wd_scroll">
         <section className="tokens-area section">
           <div
-            class="elementor-shape elementor-shape-top"
+            className="elementor-shape elementor-shape-top"
             data-negative="false"
           >
             <svg
@@ -113,22 +113,22 @@ class Tokens extends Component {
               preserveAspectRatio="none"
             >
               <path
-                class="elementor-shape-fill"
+                className="elementor-shape-fill"
                 style={{ opacity: 0.33 }}
                 d="M0 0L0 18.8 141.8 4.1 283.5 18.8 283.5 0z"
               ></path>
               <path
-                class="elementor-shape-fill"
+                className="elementor-shape-fill"
                 style={{ opacity: 0.33 }}
                 d="M0 0L0 12.6 141.8 4 283.5 12.6 283.5 0z"
               ></path>
               <path
-                class="elementor-shape-fill"
+                className="elementor-shape-fill"
                 style={{ opacity: 0.33 }}
                 d="M0 0L0 6.4 141.8 4 283.5 6.4 283.5 0z"
               ></path>
               <path
-                class="elementor-shape-fill"
+                className="elementor-shape-fill"
                 d="M0 0L0 1.2 141.8 4 283.5 1.2 283.5 0z"
               ></path>
             </svg>

@@ -10,7 +10,7 @@ class MainSlider extends Component {
   render() {
     return (
       <div className="slider-area">
-        <div class="elementor-background-overlay"></div>
+        <div className="elementor-background-overlay"></div>
 
         <div className="carousel">
           <Container>

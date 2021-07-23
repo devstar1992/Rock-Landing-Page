@@ -30,8 +30,8 @@ class Roadmap extends Component {
                     </div>
                   </Col>
                   <Col lg={7} md={7} sm={7} xs={7}>
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"></span>
+                    <div className="elementor-divider">
+                      <span className="elementor-divider-separator"></span>
                     </div>
                   </Col>
                 </Row>
@@ -58,8 +58,8 @@ class Roadmap extends Component {
                     </div>
                   </Col>
                   <Col lg={7} md={7} sm={7} xs={7}>
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"></span>
+                    <div className="elementor-divider">
+                      <span className="elementor-divider-separator"></span>
                     </div>
                   </Col>
                 </Row>
@@ -90,8 +90,8 @@ class Roadmap extends Component {
                     </div>
                   </Col>
                   <Col lg={7} md={7} sm={7} xs={7}>
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"></span>
+                    <div className="elementor-divider">
+                      <span className="elementor-divider-separator"></span>
                     </div>
                   </Col>
                 </Row>
@@ -120,8 +120,8 @@ class Roadmap extends Component {
               <div style={{ marginTop: "450px" }}>
                 <Row>
                   <Col lg={7} md={7} sm={7} xs={7}>
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"></span>
+                    <div className="elementor-divider">
+                      <span className="elementor-divider-separator"></span>
                     </div>
                   </Col>
                   <Col lg={5} md={5} sm={5} xs={5}>
@@ -149,8 +149,8 @@ class Roadmap extends Component {
               <div style={{ marginTop: "250px" }}>
                 <Row>
                   <Col lg={7} md={7} sm={7} xs={7}>
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"></span>
+                    <div className="elementor-divider">
+                      <span className="elementor-divider-separator"></span>
                     </div>
                   </Col>
                   <Col lg={5} md={5} sm={5} xs={5}>

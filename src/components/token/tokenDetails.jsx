@@ -28,8 +28,8 @@ class TokenDetails extends Component {
       nav: true,
       dots: false,
       navText: [
-        '<i class="fa fa-angle-left"></i>',
-        '<i class="fa fa-angle-right"></i>',
+        '<i className="fa fa-angle-left"></i>',
+        '<i className="fa fa-angle-right"></i>',
       ],
       responsive: {
         0: {

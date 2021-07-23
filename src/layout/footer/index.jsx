@@ -17,7 +17,7 @@ class Footer extends Component {
           <div className="footer-bottom">
             <Row className="pd-t40 pd-l10 pd-r10 pd-b80">
               <Col lg={4} md={4} sm={12} className="col-xs-12">
-                <h4 class="elementor-heading-title">Follow Us on Social Media</h4>
+                <h4 className="elementor-heading-title">Follow Us on Social Media</h4>
 
                 <div className="logo-area">
                   <ul>
@@ -51,13 +51,13 @@ class Footer extends Component {
 
               </Col>
               <Col lg={4} md={4} sm={4} xs={12}>
-                <h2 class="elementor-heading-title">Interested in Partnerships?</h2>
-                <h2 class="elementor-size-default">Marketing, IFO, AMA's, Listings, etc...<br />
+                <h2 className="elementor-heading-title">Interested in Partnerships?</h2>
+                <h2 className="elementor-size-default">Marketing, IFO, AMA's, Listings, etc...<br />
 
                   Get in touch with us!</h2>
               </Col>
               <Col lg={4} md={4} sm={12} className="col-xs-12">
-                <h4 class="elementor-heading-title">Sign up to receive the lastest news!
+                <h4 className="elementor-heading-title">Sign up to receive the lastest news!
                   Email</h4>
                 <input type="email" placeholder="Email"  />
                 <button className="elementor-button elementor-size-md mr-t20">

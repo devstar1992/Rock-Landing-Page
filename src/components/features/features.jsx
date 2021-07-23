@@ -32,17 +32,17 @@ class Features extends Component {
       <div id="features" className="wd_scroll_wrap wd_scroll">
         <section className="features-area section">
           <div
-            class="elementor-shape elementor-shape-top"
+            className="elementor-shape elementor-shape-top"
             data-negative="false"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 700 10"
               preserveAspectRatio="none"
-              class=""
+              className=""
             >
               <path
-                class="elementor-shape-fill"
+                className="elementor-shape-fill"
                 d="M350,10L340,0h20L350,10z"
               ></path>
             </svg>{" "}
@@ -50,8 +50,8 @@ class Features extends Component {
           <Row>
             <Col lg={4} md={4} sm={12} className="col-xs-12">
               <div className="contents">
-                <div class="elementor-icon-box-icon">
-                  <span class="elementor-icon elementor-animation-">
+                <div className="elementor-icon-box-icon">
+                  <span className="elementor-icon elementor-animation-">
                     <FaSyncAlt />
                   </span>
                 </div>
@@ -62,8 +62,8 @@ class Features extends Component {
                 </p>
               </div>
               <div className="contents">
-                <div class="elementor-icon-box-icon">
-                  <span class="elementor-icon elementor-animation-">
+                <div className="elementor-icon-box-icon">
+                  <span className="elementor-icon elementor-animation-">
                     <FaHeart />
                   </span>
                 </div>
@@ -75,8 +75,8 @@ class Features extends Component {
                 </p>
               </div>
               <div className="contents">
-                <div class="elementor-icon-box-icon">
-                  <span class="elementor-icon elementor-animation-">
+                <div className="elementor-icon-box-icon">
+                  <span className="elementor-icon elementor-animation-">
                     <FaShoppingCart />
                   </span>
                 </div>
@@ -98,8 +98,8 @@ class Features extends Component {
             </Col>
             <Col lg={4} md={4} sm={12} className="col-xs-12">
               <div className="contents">
-                <div class="elementor-icon-box-icon">
-                  <span class="elementor-icon elementor-animation-">
+                <div className="elementor-icon-box-icon">
+                  <span className="elementor-icon elementor-animation-">
                     <FaUniversity />
                   </span>
                 </div>
@@ -110,8 +110,8 @@ class Features extends Component {
                 </p>
               </div>
               <div className="contents">
-                <div class="elementor-icon-box-icon">
-                  <span class="elementor-icon elementor-animation-">
+                <div className="elementor-icon-box-icon">
+                  <span className="elementor-icon elementor-animation-">
                     <FaGamepad />
                   </span>
                 </div>
@@ -123,8 +123,8 @@ class Features extends Component {
                 </p>
               </div>
               <div className="contents">
-                <div class="elementor-icon-box-icon">
-                  <span class="elementor-icon elementor-animation-">
+                <div className="elementor-icon-box-icon">
+                  <span className="elementor-icon elementor-animation-">
                     <FaMusic />
                   </span>
                 </div>

@@ -1706,13 +1706,8 @@ header .menu-area nav {
 header .menu-area nav ul li {
   display: inline-block;
   position: relative;
-  padding: 0 10px;
 }
-@media only screen and (max-width: 1200px) {
-  header .menu-area nav ul li {
-    padding: 0 10px;
-  }
-}
+
 header .menu-area nav ul li:first-child {
   padding-left: 0;
 }
@@ -2038,7 +2033,7 @@ ul ul > li.has-sub > a:before {
   background-repeat: no-repeat; /* Do not repeat the image */
 
   background-position: bottom left;
-  background-size: 100% auto;
+  background-size: 100% 100%;
   opacity: 0.94;
   height: 100%;
   width: 100%;
@@ -2142,7 +2137,7 @@ ul ul > li.has-sub > a:before {
 }
 .elementor-headline-dynamic-wrapper svg {
   position: absolute;
-  top: 40%;
+  top: 55%;
   left: 50%;
   width: calc(100% + 20px);
   height: calc(100% + 20px);
@@ -2452,11 +2447,7 @@ ul ul > li.has-sub > a:before {
 .about-area {
   display: block;
 }
-@media only screen and (max-width: 768px) {
-  .about-area {
-    padding: 45px 0 75px;
-  }
-}
+
 @media only screen and (max-width: 768px) {
   .about-area .about-content {
     text-align: center;

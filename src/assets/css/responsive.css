@@ -42,6 +42,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .road_map-area .contents ul{
+    padding:0 30px;
+  }
   .slider {
     height: 300px;
   }
@@ -120,6 +123,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+
   .tokens-area .weeks{
     width:100%;
 
@@ -297,9 +301,7 @@
   header .menu-area {
     padding-top: 5px;
   }
-  header .menu-area nav ul li {
-    padding: 0 9px;
-  }
+
 
   .slider-area .slider-content h2 {
     font-size: 40px;
