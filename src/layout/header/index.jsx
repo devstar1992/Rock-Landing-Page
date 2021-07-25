@@ -191,12 +191,12 @@ const Header = ({ network, switchNetwork }) => {
                     <Link to="#">
                       <GiCutDiamond />
                     </Link>
-                  </li>
+                  </li>*/}
                   <li className="slider_social_icon5">
-                    <Link to="#">
+                    <a href="https://whitepaper">
                       <GiStabbedNote />
-                    </Link>
-                  </li> */}
+                    </a>
+                  </li> 
                 </ul>
               </div>
             </Col>
@@ -208,7 +208,7 @@ const Header = ({ network, switchNetwork }) => {
                 <div className="login-btn">
                   {account ? (
                     <button
-                      className="btn1"
+                      className="btn-wallet"
                       onClick={modals[network].onPresentAccountModal}
                     >
                       {account.substr(0, 4) +
@@ -227,7 +227,7 @@ const Header = ({ network, switchNetwork }) => {
                   <div className="col-xs-12">
                       {account ? (
                         <button
-                          className="btn1"
+                          className="btn-wallet"
                           onClick={modals[network].onPresentAccountModal}
                         >
                           {account.substr(0, 4) +

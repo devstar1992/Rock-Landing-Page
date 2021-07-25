@@ -2248,6 +2248,8 @@ ul ul > li.has-sub > a:before {
 .logo-area ul li a img {
   height: 25px;
 }
+
+
 .slider-area .slider-content ul li a {
   display: block;
   width: 50px;
@@ -5877,4 +5879,21 @@ input{
   color: white;
   float: right;
   line-height: 14px;
+}
+@media only screen and (max-width: 480px) {
+  .logo-area ul li a {
+    width: 30px;
+  height: 30px;
+  line-height: 35px;
+  font-size: 15px;
+  }
+  .logo-area ul li a img {
+    height: 15px;
+  }
+  #toggle{
+    margin-top: -10px;
+  }
+  .btn-wallet{
+    padding: 3px 10px;
+  }
 }
