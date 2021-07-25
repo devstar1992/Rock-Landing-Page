@@ -30,22 +30,22 @@ class Tokens extends Component {
           <div className="weeks">
             <img src={week1} className="weeks-image" />
             <h2 className="elementor-heading-title">
-              Price: $1.00
+              Price: $2.00
             </h2>
           </div>
           <div className="weeks">
             <img src={week2} className="weeks-image" />
             <h2 className="elementor-heading-title">
-              Price: $1.50
+              Price: $2.25
             </h2>
           </div>
           <div className="weeks">
             <img src={week3} className="weeks-image" />
             <h2 className="elementor-heading-title">
-              Price: $2.00
+              Price: $2.50
             </h2>
           </div>
-          <div className="weeks">
+          <div className="weeks current">
             <img src={week4} className="weeks-image" />
             <h2 className="elementor-heading-title">
               Price: $3.00

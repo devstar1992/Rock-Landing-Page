@@ -5773,6 +5773,16 @@ font-weight: bold;
     font-size:inherit;
     text-align:center;
 }
+.current{
+  border: 2px solid rgb(104, 104, 252);
+
+}
+.current .elementor-heading-title{
+  color: #ff8500!important;
+  background-image: none!important;
+  background-color: rgb(78, 69, 247)!important;
+  margin: 0;
+}
 .buy-inputs{
   display: flex;
   flex-direction: row;
