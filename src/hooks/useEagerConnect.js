@@ -25,7 +25,10 @@ const useEagerConnect = () => {
   const { login } = useAuth(network);
   useEffect(() => {
     const connectorId = window.localStorage.getItem(connectorLocalStorageKey);
-
+    if(connectorId!=56 && connectorId!=137){
+      window.localStorage.removeItem(connectorLocalStorageKey);
+      return;
+    }
     if (connectorId) {
       if (network === 56) {
         const isConnectorBinanceChain = connectorId === ConnectorNames.BSC;

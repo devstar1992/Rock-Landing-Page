@@ -34,8 +34,8 @@ const Header = ({ network, switchNetwork }) => {
         Binance Smart Chain
       </Button>
       <br />
-      {/* <Button variant="primary" onClick={onConnect(97)} width="100%">
-        Binance Smart Chain Testnet
+      {/*<Button variant="primary" onClick={onConnect(3)} width="100%">
+        Ropsten Testnet
       </Button>
       <br /> */}
       <Button variant="primary" onClick={onConnect(137)} width="100%">
@@ -50,13 +50,13 @@ const Header = ({ network, switchNetwork }) => {
   const [onNetworkModal] = useModal(networkModal);
   const auths = {
     56: useAuth(56),
-    97: useAuth(97),
+    3: useAuth(3),
     137: useAuth(137),
     80001: useAuth(80001),
   };
   const modals = {
     56: useWalletModal(auths["56"].login, auths["56"].logout, account, 56),
-    97: useWalletModal(auths["97"].login, auths["97"].logout, account, 97),
+    3: useWalletModal(auths["3"].login, auths["3"].logout, account, 3),
     137: useWalletModal(auths["137"].login, auths["137"].logout, account, 137),
     80001: useWalletModal(
       auths["80001"].login,
@@ -193,7 +193,7 @@ const Header = ({ network, switchNetwork }) => {
                     </Link>
                   </li>*/}
                   <li className="slider_social_icon5">
-                    <a href="https://whitepaper">
+                    <a href="https://whitepaper.pdf">
                       <GiStabbedNote />
                     </a>
                   </li> 

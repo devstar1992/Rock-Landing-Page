@@ -42,7 +42,7 @@ class Footer extends Component {
                       </Link>
                     </li> */}
                     <li className="slider_social_icon5">
-                    <a href="https://whitepaper">
+                    <a href="https://whitepaper.pdf">
                       <GiStabbedNote />
                     </a>
                   </li> 

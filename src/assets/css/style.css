@@ -2147,7 +2147,7 @@ ul ul > li.has-sub > a:before {
 
 .slider-area .elementor-background-overlay {
   background: url("../images/background/back.png");
-  background-position: center top; /* Center the image */
+  background-position: center bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   opacity: 0.72;
@@ -5744,6 +5744,31 @@ canvas {
 font-weight: bold;
 
 }
+@media only screen and (max-width: 1900px) {  
+  .road_map-left-margin-top, .road_map-right-margin-top-small {
+    margin-top: 13vw;
+  }
+  .road_map-right-margin-top-large {
+    margin-top: 25vw;
+  }
+}
+@media only screen and (max-width: 1300px) {  
+  .road_map-left-margin-top, .road_map-right-margin-top-small {
+    margin-top: 6vw;
+  }
+  .road_map-right-margin-top-large {
+    margin-top: 12.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {  
+  .road_map-left-margin-top, .road_map-right-margin-top-small {
+    margin-top: 4vw;
+  }
+  .road_map-right-margin-top-large {
+    margin-top: 10vw;
+  }
+}
+
 .road_map-area .contents ul{
   list-style-type:disc;
   font-weight: 400;
