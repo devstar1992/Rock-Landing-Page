@@ -11,13 +11,14 @@ class Countdown extends Component {
   componentDidMount() {
     this.interval = setInterval(() => {
       const { timeTillDate, timeFormat } = this.props;
-      const then = moment(timeTillDate, timeFormat);
+      
+      const then = moment.utc(timeTillDate);// moment(timeTillDate, timeFormat);
       const now = moment();
-      const countdown = moment(then - now);
-      const days = countdown.format('D');
-      const hours = countdown.format('HH');
-      const minutes = countdown.format('mm');
-      const seconds = countdown.format('ss');
+      const countdown = moment.duration(then.diff(now));
+      const days = countdown.days();
+      const hours = countdown.hours();
+      const minutes = countdown.minutes();
+      const seconds = countdown.seconds();
 
       this.setState({ days, hours, minutes, seconds });
     }, 1000);
