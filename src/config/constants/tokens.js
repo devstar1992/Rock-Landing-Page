@@ -13,7 +13,7 @@ const tokens = {
   jazz: {
     symbol: 'JAZZ',
     address: {
-      56: '0x303ba087356901f4178075C3a4Ca58A97Fae845d',
+      56: '0x77F2a1E63054c45093abcB0B83f16a0CE79b7018',
       137: '',
     },
     decimals: 18,
