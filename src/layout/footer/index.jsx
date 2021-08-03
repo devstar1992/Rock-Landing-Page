@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
-import { FaRegChartBar, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaRegChartBar, FaTelegram, FaTwitter, FaTelegramPlane } from "react-icons/fa";
 import { GiCutDiamond, GiStabbedNote } from "react-icons/gi";
 
 class Footer extends Component {
@@ -31,6 +31,11 @@ class Footer extends Component {
                         <FaTelegram />
                       </a>
                     </li>
+                    <li className="slider_social_icon2">
+                    <a href="https://t.me/rockfinance" target="blank">
+                      <FaTelegramPlane />
+                    </a>
+                  </li>
                     {/* <li className="slider_social_icon3">
                       <a href="https://dex.guru/token/0x77f2a1e63054c45093abcb0b83f16a0ce79b7018-bsc" target="blank">
                         <FaRegChartBar />
@@ -40,12 +45,12 @@ class Footer extends Component {
                       <Link to="#">
                         <GiCutDiamond />
                       </Link>
-                    </li> */}
+                    </li> 
                     <li className="slider_social_icon5">
                     <a href="https://whitepaper.pdf">
                       <GiStabbedNote />
                     </a>
-                  </li> 
+                  </li> */}
                   </ul>
                 </div>
 
