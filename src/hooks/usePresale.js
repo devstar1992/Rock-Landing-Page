@@ -57,6 +57,6 @@ export const useAirdropPreSale = (chainId) => {
       return txHash
     }, [account, contract])
 
-  return { onSwap: handleBuy }
+  return { onAirdrop: handleBuy }
 }
 export default useBuyPreSale
