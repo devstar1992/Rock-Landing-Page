@@ -95,6 +95,9 @@ const Tokenomics = () => {
             <div className="counter-description mr-t30">Marketing</div>
           </Col>
           <Col lg={4} md={4} sm={12} className="col-xs-12">
+            <Col  className="visible-xs visible-sm" style={{ textAlign: "center" }}>
+              <p style = {{height: 50}}></p>
+            </Col>
             <h2 className="elementor-heading-title red">Key Features</h2>
             <p className="mr-b70">
               Rock will have many features to sustain the ecosystem
