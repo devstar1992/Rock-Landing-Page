@@ -2,7 +2,7 @@ import {fetchFullSaleStatus} from 'utility/tokenBalance'
 import {getBalanceNumber} from 'utility/formatBalance'
 
 const getPrice = (phase, chainId) =>{
-
+    const priceBnb =330;
     if(chainId == '56'){
       switch(phase){
         case 0:
