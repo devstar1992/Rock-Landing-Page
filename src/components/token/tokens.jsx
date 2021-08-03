@@ -125,7 +125,7 @@ const Tokens = () => {
   const handleAirdrop = useCallback(async () => {
     try {
       setRequestedBuy(true)
-      const txHash = await onAirdrop(getDecimalAmount(sendAmount2))
+      const txHash = await onAirdrop(getDecimalAmount(sendAmount3))
       // user rejected tx or didn't go thru
       console.log(txHash)
       if (txHash) {
