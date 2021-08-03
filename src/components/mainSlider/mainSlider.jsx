@@ -37,7 +37,7 @@ class MainSlider extends Component {
                 // className="col-xs-12 hidden-xs hidden-sm"
               >
                 <Countdown
-                  timeTillDate="08 1 2021, 0:30 am"
+                  timeTillDate="09 5 2021, 9:30 am"
                   timeFormat="MM DD YYYY, h:mm a"
                 />
               </Col>
