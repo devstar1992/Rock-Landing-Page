@@ -10,7 +10,7 @@ import {
 } from "@pancakeswap-v3/uikit";
 import { useWeb3React } from "@web3-react/core";
 import logo from "assets/images/logo/logo.png";
-import { FaRegChartBar, FaTelegram, FaTwitter ,FaTelegramPlane} from "react-icons/fa";
+import { FaRegChartBar, FaTelegram, FaTwitter ,FaTelegramPlane, FaReddit} from "react-icons/fa";
 import { GiCutDiamond, GiStabbedNote } from "react-icons/gi";
 import flag from "../../assets/images/icons/12.png";
 import Config from "../../configure";
@@ -184,6 +184,11 @@ const Header = ({ network, switchNetwork }) => {
                   <li className="slider_social_icon2">
                     <a href="https://t.me/rockfinance" target="blank">
                       <FaTelegramPlane />
+                    </a>
+                  </li>
+                  <li className="slider_social_icon2">
+                    <a href="https://www.reddit.com/r/RCKFinance" target="blank">
+                      <FaReddit />
                     </a>
                   </li>
                   {/* <li className="slider_social_icon3">
